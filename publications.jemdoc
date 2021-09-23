@@ -1,0 +1,24 @@
+# jemdoc: menu{MENU}{index.html}, nofooter  
+==Publications
+
+=== Journal Papers
+. E. Ghadimi, H. R. Feyzmahdavian, and M. Johansson, \"Global convergence of the heavy-ball method for convex optimization\",  In ECC'15: European Control Conference, 2015.
+. E. Ghadimi, A. Teixeira, I. Shames, and M. Johansson \" Optimal parameter selection for the alternating direction method of
+multipliers (ADMM): quadratic problems \", IEEE Transactions on Automatic Control, 2015. \[[http://arxiv.org/abs/1306.2454 arxiv]\]
+. E. Ghadimi, A. Teixeira, M. Rabbat, and M. Johansson, \"The ADMM algorithm for distributed averaging: Convergence rates and optimal parameter selection\", In Proceedings of the 48th Asilomar Conference on Signals, Systems and Computers, 2014. \[[https://www.dropbox.com/s/k9izxz1m39yvvuz/admm_distributed_aveg.pdf?dl=0 pdf] \]
+. E. Ghadimi, O. Landsiedel, P. Soldati, S. Duquennoy, and M. Johansson, \"Opportunistic Routing in Low Duty-Cycle Wireless Sensor Networks\", ACM Transactions on Senor Networks, 2014. \[[pub/oppTOSN.pdf pdf]\]
+
+=== Journal Papers
+. (Under Review) Guo, D., Jin, X., Shao, D., Li, J., Shen, Y., Tan, H. \"Image-Based Regulation of Mobile Robots without Pose Measurement\", In L-CSS + ACC 2022.
+. (Under Review) Huang, Z., Shen, Y., Li, J., Fey, M., Brecher, C. \"A Survey on AI-Driven Digital Twins in Intelligent Infrastructure: Energy, Smart City, and Healthcare\", In Sensors, 2021.
+. (Accepted)) Huang, Z., Shen, Y., Li, J., Fey, M., Brecher, C. \"A Survey on AI-Driven Digital Twins in Industry 4.0: Smart Manufacturing and Advanced Robotics\", In Sensors, 2021.
+. Li, J. and Wang, Y. \"An Interview with Owen McCall from TREECYCLE\", In XRDS 27, 4 (Summer 2021), pp. 42-45, 2021.
+. Li, J. and Ahuja, K. \"Making with a Sustainable Purpose: an Interview with Matthew L. Mauriello\", In XRDS 27, 4 (Summer 2021), pp. 38-41, 2021.
+
+=== Preprints
+. Raghavan, G., Li, J., and Thomson, M. "Geometric Algorithms for Predicting Resilience and Recovering Damage in Neural Networks", arXiv, 2020.
+
+[publications.html Full list of publications].
+\n
+[cv.pdf A brief cv].
+
