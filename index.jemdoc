@@ -1,43 +1,38 @@
 # jemdoc: menu{MENU}{index.html}, nofooter  
-==Jiayi Li
-Pronunciation: jyä′ē′
+==Jiayi Li 
+
 ~~~
 {}{img_left}{images/bio.jpg}{alt text}{125}{160}{}
 PhD Student,\n [http://statistics.ucla.edu/ Department of Statistics], \n[http://www.ucla.edu University of California Los Angeles (UCLA)]\n
 Pronouns: She\/her\/hers \n
 E-mail: /jiayi.li/ \[@\] g.ucla \[DOT\] edu
-~~~
 
 == About me
 
-I am a Ph.D. student at UCLA advised by Professor [https://www.math.ucla.edu/~montufar/ Guido Montúfar], where I work on *statistical machine learning* problems with a focus on foundations of deep learning.
+I am a fifth year Ph.D. student in Statistics at UCLA. I work on *statistical machine learning* and algebraic statistics with my wonderful advisor Professor [https://www.math.ucla.edu/~montufar/ Guido Montúfar]. 
 
-Prior to graduate school, I did bachelors in Mathematics at [http://www.math.stonybrook.edu/ SUNY Stony Brook] and [https://www.hku.hk/ The University of Hong Kong]. I was fortunate to be advised by Professor [http://www.math.stonybrook.edu/~roblaz/ Robert Lazarsfeld] who introduced me to the wonderful world of classical algebraic geometry. 
+Prior to graduate school, I did a bachelor in Mathematics with 2 years at [https://www.hku.hk/ the University of Hong Kong] and  2 years at [http://www.math.stonybrook.edu/ SUNY Stony Brook]. I was fortunate to be advised by Professor [http://www.math.stonybrook.edu/~roblaz/ Robert Lazarsfeld] who introduced me to the miraculous world of classical algebraic geometry. 
+
+My first name is pronounced as jyä′ē′. 
+~~~
 
 ~~~
-Here are topics I am currently working on and/////or hope to explore in the recent future: 
-- Deep learning theory: Generalization, Non-convex optimization
-- Algebraic statistics 
-- Manifold learning
+ Here are topics I am now working on and/or hope to explore in the recent future:
+- Feature collapse in terminal phase of training
+- Polynomial neural network: optimization and generalization
+- Implicit bias and benign overfitting 
 ~~~
 
 == News
-- /Aug, 2021/ I attended [https://www.mis.mpg.de/calendar/conferences/2021/mml2021 Conference on Mathematics of Machine Learning] at [https://www.mis.mpg.de/ MPI MiS].
-- /May, 2021/ I attended ICLR 2021, funded by WiML.
-- /Jan, 2021/ I attended TRIPODS Winter School & Workshop on Graph Learning and Deep Learning. 
-- /Dec, 2020/ I attended NeurIPS 2020, funded by ACM. 
-- /Dec, 2020/ I served as a student volunteer for the WiML workshop at NeurIPS. It was a pleasure to meet everyone! 
-- /Nov, 2020/ I was fortunte to be selected as one of the two ACM-W Scholarship awardees. 
-- /Oct, 2020/ I started editorship at [https://xrds.acm.org/ XRDS]. Check out our [https://xrds.acm.org/current-issue.cfm current issue]! 
-- /Jun, 2020/ I received Cathay Bank Scholarship. 
+- /Mar, 2024/ I am attending the [https://www.ipam.ucla.edu/programs/workshops/encore-workshop-on-computational-vs-statistical-gaps-in-learning-and-optimization/ EnCore Workshop on Learning and Optimization] locally at [https://www.ipam.ucla.edu/programs/workshops/encore-workshop-on-computational-vs-statistical-gaps-in-learning-and-optimization/ IPAM]. Ask me what's the best food on campus. 
+- /Dec, 2023/ I visited UW Madison to present at the [https://wiki.math.wisc.edu/index.php/Applied_Algebra_Seminar_Fall_2022 Applied Algebra Seminar]. Hello Madison!
+- /Oct, 2023/ I co-organized the [https://physicalsciences.ucla.edu/2nd-distinguished-women-in-statistics-and-data-science-workshop-shining-a-light-on-women-in-industry/ 2nd Distinguished Women in Statistics and Data Science Workshop]. Thanks to everyone who participated!
+- /Sep, 2023/ I stayed at IMSI, Chicago for the long program [https://www.imsi.institute/activities/algebraic-statistics-and-our-changing-world/ Algebraic Statistics and Our Changing World] until December. It was a fantastic program with amazing people. 
+- /July, 2023/ I spent the summer at the [https://www.mis.mpg.de/ Max Planck Institute for Mathematics in the Sciences] in Leipzig. I miss the nights spent at the Institute's library. 
 
-== Awards
-- Summer Mentored Research Fellowship, UCLA, 2021
-- [https://women.acm.org/acm-w-scholarship-for-attendance-of-research-conferences-3/ ACM-W Scholarship], Association for Computing Machinery, 2020
-- [https://www.cathaybank.com/about-us/cathay-bank-scholarship Cathay Bank Scholarship], 2020
-- William Lowell Putnam Competition, school team, 2017, 2018
-- MSRI Travel Fund, MSRI, 2017
-- Overseas Research Fellowship, The University of Hong Kong, 2016
-- Research Open House Competition Prize, Faculty of Science, The University of Hong Kong, 2015
-- Undergraduate Research Fellowship, The University of Hong Kong, 2015
+== Fellowships 
+- Summer Mentored Research Fellowship, UCLA 
+- ACM-W Scholarship, Association for Computing Machinery 
+- Cathay Bank Scholarship
+- Overseas Research Fellowship, The University of Hong Kong
 

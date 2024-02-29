@@ -1,64 +1,94 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-<head>
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<title>Research</title>
-</head>
-<body>
-<table summary="Table for page layout." id="tlayout">
-<tr valign="top">
-<td id="layout-menu">
-<div class="menu-category">Jiayi</div>
-<div class="menu-item"><a href="index.html" class="current">Home</a></div>
-<div class="menu-item"><a href="cv.pdf">CV</a></div>
-<div class="menu-item"><a href="research.html">Research</a></div>
-<div class="menu-item"><a href="teaching.html">Teaching</a></div>
-<div class="menu-item"><a href="courses.html">Courses</a></div>
-<div class="menu-category">Miscellaneous</div>
-<div class="menu-item"><a href="activities.html">Activities</a></div>
-</td>
-<td id="layout-content">
-<div id="toptitle">
-<h1>Research</h1>
-</div>
-<p>I am working with Professor <a href="https://www.math.ucla.edu/~montufar/">Guido Montúfar</a> on <b>statistical machine learning</b>, with a focus on problems in foundations of deep learning.</p>
-<div class="infoblock">
-<div class="blockcontent">
-<p>My research interests are broadly in: </p>
-<ul>
-<li><p>Deep learning theory: implicit bias, generalization, non-convex optimization</p>
-</li>
-<li><p>Algebraic statistics </p>
-</li>
-<li><p>Manifold learning</p>
-</li>
-</ul>
-</div></div>
-<h3>Projects</h3>
+  <!doctype html>
+  <html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\(','$\)']],
+      displayMath: [['$$','$$'], ['$\[','$\]']]
+    },
+    TeX: {
+      extensions: ["AMScd.js", "action.js", "autobold.js", "cancel.js", "begingroup.js", "color.js", "enclose.js"]
+    }
+  });
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="jemdoc.css" type="text/css" />
+  <title>Research</title>
+  </head>
+  <body>
+  <div class="title-divider"></div>
+  <main class="container" id="tlayout">
+  <div class="row">
+  <!-- Side menu -->
+  <aside class="col-12 col-md-3 " id="sidemenu">
+  <ul class="nav nav-pills flex-column">
+  <div class="menu-category">Jiayi</div>
+  <li class="nav-item menu-item"><a href="index.html" class="nav-link active">Home</a></li>
+  <li class="nav-item menu-item"><a href="cv.pdf" class="nav-link">CV</a></li>
+  <li class="nav-item menu-item"><a href="research.html" class="nav-link">Research</a></li>
+  <li class="nav-item menu-item"><a href="teaching.html" class="nav-link">Teaching</a></li>
+  <li class="nav-item menu-item"><a href="courses.html" class="nav-link">Courses</a></li>
+  <li class="nav-item menu-item"><a href="activities.html" class="nav-link">Unscripted</a></li>
+  </ul>
+  </aside>
+  <div class="col-12 col-md-9" id="main-content">
+  <div class="toptitle">
+  <h1>Research</h1>
+  </div>
+<p>I have been working with my advisor, <a href="https://www.math.ucla.edu/~montufar/"  >Guido</a>, on statistical machine learning and algebraic statistics. Currently, I am mostly focused on learning theory.</p>
+  <div class="infoblock">
+  <div class="blockcontent">
+<p>Among all the fascinating problems in machine learning theory, I am particularly interested in 
+applying and developing new algebraic methods to study the expressivity, optimization and generalization of neural networks.  </p>
+  </div></div>
+<h4>Geometry of polynomial neural networks</h4>
+<figure>
+<img class="img-fluid" src="images/Pnn.png"   alt="alt text" width="500px" /><p>In this paper, we study the expressivity and learning process for polynomial neural networks (PNNs) with monomial activation functions. The weights of the network parametrize the neuromanifold. In this paper, we study certain neuromanifolds using tools from algebraic geometry: we give explicit descriptions as semialgebraic sets and characterize their Zariski closures, called neurovarieties. We study their dimension and associate an algebraic degree, the learning degree, to the neurovariety. The dimension serves as a geometric measure for the expressivity of the network, the learning degree is a measure for the complexity of training the network and provides upper bounds on the number of learnable functions. These theoretical results are accompanied with experiments.</p>
+<p>Joint work with <a href="https://www.kaiekubjas.com/"  >Kaie Kubjas</a> and <a href="https://maximilianwiesmann.github.io/"  >Maximilian Wiesmann</a>. <a href="https://arxiv.org/abs/2402.00949"  ><strong>[Paper]</strong></a> <a href="https://mathrepo.mis.mpg.de/PolynomialNeuralNetworks/"  ><strong>[Code]</strong></a></p>
+</figure>
+<h4>Discussion: Estimating means of bounded random variables by betting</h4>
+<figure>
+<img class="img-fluid" src="images/dai.jpeg"   alt="alt text" width="500px" /><p>In this work, we evaluate the betting method proposed by Waudby-Smith and Ramdas in generating confidence intervals and time-uniform confidence sequences for mean estimation with bounded observations.
+The methodology utilises composite non-negative martingales and establishes a connection to game-theoretic probability. We perform numerical comparisons with alternative methods and propose extension to vector settings. </p>
+<p>Joint work with <a href="https://liyuantong93.com/"  >Yuantong Li</a> and <a href="https://www.xiaowudai.org/"  >Xianwu Dai</a>. <a href="https://academic.oup.com/jrsssb/article/86/1/41/7303977"  ><strong>[Paper]</strong></a> <a href="https://github.com/Likelyt/Estimate-mean-with-betting"  ><strong>[Code]</strong></a></p>
+</figure>
+<h4>Pull-back Geometry of Persistent Homology Encodings </h4>
+<figure>
+<img class="img-fluid" src="images/tda.png"   alt="alt text" width="300px" /><p>This paper investigates the spectrum of the Jacobian of PH data encodings and the pull-back geometry that they induce
+on the data manifold. Then, by measuring different perturbations and features on the data
+manifold with respect to this geometry, we can identify which of them are recognized or
+ignored by the PH encodings. This also allows us to compare different encodings in terms of
+their induced geometry. Importantly, the approach does not require training and testing on
+a particular task and permits a direct exploration of PH. We experimentally demonstrate
+that the pull-back norm can be used as a predictor of performance on downstream tasks and
+to select suitable PH encodings accordingly. All experiments were conducted by the first author; I worked with formulating the pull-back norm and the differential geometry background. </p>
+<p>Joint work with Shuang Liang, <a href="https://renata-turkes.github.io/"  >Renata Turkeš</a>, <a href="https://www.ninaotter.com/"  >Nina Otter</a> and <a href="https://www.math.ucla.edu/~montufar/"  >Guido Montúfar</a>. <a href="https://arxiv.org/pdf/2310.07073.pdf"  ><strong>[Paper]</strong></a> </p>
+</figure>
+<h4>Geometric Algorithms for predicting resilience and recovering damage in neural networks</h4>
+<figure>
+<img class="img-fluid" src="images/Figure1_v4.png"   alt="" width="300px" /><p>In this paper, we establish a mathematical framework to analyze the resilience of artificial neural networks through 
+the lens of differential geometry. Our geometric language provides natural algorithms that identify local vulnerabilities in trained networks as well as recovery algorithms that dynamically adjust networks to compensate for damage. We reveal striking vulnerabilities in commonly used image analysis networks, like MLP's and CNN's trained on MNIST and CIFAR10 respectively. We also uncover high-performance recovery paths that enable the same networks to dynamically re-adjust their parameters to compensate for damage. Broadly, our work provides procedures that endow artificial systems with resilience and rapid-recovery routines to enhance their integration with IoT devices as well as enable their deployment for critical applications.<br /></p>
+<p>Joint work with <a href="https://thomsonlab.caltech.edu/people/graghava/"  >Guruprasad Raghavan</a> and <a href="https://thomsonlab.caltech.edu/"  >Matt Thomson</a>. <a href="https://arxiv.org/abs/2005.11603"  ><strong>[paper]</strong></a></p>
+</figure>
 <h4>Understanding expressivity of neural networks through tropical geometry</h4>
-<table class="imgtable"><tr><td>
-<img src="images/patch_2.png" alt="alt text" width="300px" />&nbsp;</td>
-<td align="left"><p>Tropical geometry is a variant of algebraic geometry where people study polynomials and their geometric properties with addition 
+<figure>
+<img class="img-fluid" src="images/patch_2.png"   alt="alt text" width="500px" /><p>Tropical geometry is a variant of algebraic geometry where people study polynomials and their geometric properties with addition 
 replaced by minimization and multiplication replaced by ordinary addition. Under this formulation, the polynomial graphs would resemble 
 piecewise linear meshes where numbers belong to the tropical semiring instead of a field. The maximum operation and the piecewise linear 
 property of the mesh leads us to think of neural networks with a particular family of activations and the linear regions cut out by the activation functions. 
 In 2018, Zhang et al. established the first connection  between tropical geometry and feedforward neural networks with ReLU activation
 by showing that the family of such neural networks is equivalent to the family of tropical rational maps. We generalized the results from Zhang's paper and 
-applied other techniques such as patchworking to study the expressive power of neural networks with piecewise linear activation functions.</p>
-</td></tr></table>
-<h4>Geometric Algorithms for predicting resilience and recovering damage in neural networks</h4>
-<table class="imgtable"><tr><td>
-<img src="images/Figure1_v4.png" alt="" width="300px" />&nbsp;</td>
-<td align="left"><p>Biological neural networks have evolved to maintain performance despite significant circuit damage. To survive damage, biological network architectures have both intrinsic resilience to component loss and also activate recovery programs that adjust network weights through plasticity to stabilize performance. Despite the importance of resilience in technology applications, the resilience of artificial neural networks is poorly understood, and autonomous recovery algorithms have yet to be developed. In this paper, we establish a mathematical framework to analyze the resilience of artificial neural networks through the lens of differential geometry. Our geometric language provides natural algorithms that identify local vulnerabilities in trained networks as well as recovery algorithms that dynamically adjust networks to compensate for damage. We reveal striking vulnerabilities in commonly used image analysis networks, like MLP's and CNN's trained on MNIST and CIFAR10 respectively. We also uncover high-performance recovery paths that enable the same networks to dynamically re-adjust their parameters to compensate for damage. Broadly, our work provides procedures that endow artificial systems with resilience and rapid-recovery routines to enhance their integration with IoT devices as well as enable their deployment for critical applications.<br /></p>
-<p>Joint work with <a href="https://thomsonlab.caltech.edu/people/graghava/">Guruprasad Raghavan</a> and <a href="https://thomsonlab.caltech.edu/">Matt Thomson</a>. <a href="https://arxiv.org/abs/2005.11603">arXiv</a></p>
-</td></tr></table>
+applied other techniques such as patchworking to study the expressive power of neural networks with piecewise linear activation functions. </p>
+</figure>
 <h4>Political Clusters: Legislator Communities from Voting Records </h4>
-<table class="imgtable"><tr><td>
-<img src="images/congress115-SVD-k10.png" alt="alt text" width="250px" />&nbsp;</td>
-<td align="left"><p>We utilize voting records in conjunction with clustering and community
+<figure>
+<img class="img-fluid" src="images/congress115-SVD-k10.png"   alt="alt text" width="250px" /><p>We utilize voting records in conjunction with clustering and community
 detection algorithms to classify legislators into communities by political stance.
 The underlying assumption is that legislators with more similar voting records have
 more similar political stances. We consider legislatures from multiple countries: the
@@ -68,28 +98,32 @@ data and apply five different similarity functions to construct similarity matri
 the legislators. We then apply spectral clustering, Louvain
 with and without k-nearest neighbors preprocessing, and MBO
 modularity maximization methods to the similarity matrices.<br /></p>
-<p>Joint work with <a href="https://www.math.ucla.edu/~kyungha/index.html">Kyung Ha</a>, <a href="https://www.math.ucla.edu/~graceli/">Grace Li</a>, Blaine Talbut and <a href="https://ephesosx.github.io/">Thomas Tu</a> from Department of Mathematics, UCLA. </p>
-</td></tr></table>
-<h3>Journal Publications</h3>
+<p>Joint work with Kyung Ha, <a href="https://www.math.ucla.edu/~graceli/"  >Grace Li</a>, Blaine Talbut and <a href="https://ephesosx.github.io/"  >Thomas Tu</a> from Department of Mathematics, UCLA. </p>
+</figure>
+<h3>Other Publications</h3>
 <ol>
-<li><p>(Under Review) Guo, D., Jin, X., Shao, D., Li, J., Shen, Y., Tan, H. "Image-Based Regulation of Mobile Robots without Pose Measurement", In L-CSS + ACC 2022.</p>
+<li><p>Dejun Guo, Xu Jin, Dan Shao, Jiayi Li, Yang Shen, Huan Tan “Image-Based Regulation of Mobile Robots without Pose Measurements”, IEEE Control Systems Letters
+(L-CSS), vol. 6, pp. 2156-2161, 2022.</p>
 </li>
-<li><p>(Under Review) Huang, Z., Shen, Y., Li, J., Fey, M., Brecher, C. "A Survey on AI-Driven Digital Twins in Intelligent Infrastructure: Energy, Smart City, and Healthcare", In Sensors, 2021.</p>
-</li>
-<li><p>Huang, Z., Shen, Y., Li, J., Fey, M., Brecher, C. "A Survey on AI-Driven Digital Twins in Industry 4.0: Smart Manufacturing and Advanced Robotics", In Sensors, 2021.</p>
-</li>
-<li><p>Li, J. and Wang, Y. "An Interview with Owen McCall from TREECYCLE", In XRDS 27, 4 (Summer 2021), pp. 42-45, 2021.</p>
-</li>
-<li><p>Li, J. and Ahuja, K. "Making with a Sustainable Purpose: an Interview with Matthew L. Mauriello", In XRDS 27, 4 (Summer 2021), pp. 38-41, 2021.</p>
+<li><p>Ziqi Huang, Yang Shen, Jiayi Li, Marcel Fey, Christian Brecher. “A Survey on AIDriven Digital Twins in Industry 4.0: Smart Manufacturing and Advanced Robotics”,
+Sensors, 2021.</p>
 </li>
 </ol>
-<h3>Preprints</h3>
+<h3>Editorial articles </h3>
 <ol>
-<li><p>Raghavan, G., Li, J., and Thomson, M. &ldquo;Geometric Algorithms for Predicting Resilience and Recovering Damage in Neural Networks&rdquo;, arXiv, 2020</p>
+<li><p>Jiayi Li, “Computational Creativity: Bridging Art and Computer Science ”. XRDS 29, 4 (Summer 2023), pp. 5-6, 2023.</p>
+</li>
+<li><p>Jiayi Li, Karan Ahuja, “Making with a Sustainable Purpose: an Interview with Matthew L. Mauriello”. XRDS 27, 4 (Summer 2021), pp. 38-41, 2021.</p>
+</li>
+<li><p>Jiayi Li, Yingfei Wang “An Interview with Owen McCall from TREECYCLE”. XRDS 27, 4 (Summer 2021), pp. 42-45, 2021.</p>
 </li>
 </ol>
-</td>
-</tr>
-</table>
-</body>
-</html>
+  <!-- End of main body -->
+  </div>
+  </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+  </html>
