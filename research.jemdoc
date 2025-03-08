@@ -1,13 +1,13 @@
 # jemdoc: menu{MENU}{index.html}, nofooter  
 ==Research
 
-I have been working with my advisor, [https://www.math.ucla.edu/~montufar/ Guido], on statistical machine learning and algebraic statistics. Currently, I am mostly focused on learning theory.
 ~~~
 Among all the fascinating problems in machine learning theory, I am particularly interested in 
 applying and developing new algebraic methods to study the expressivity, optimization and generalization of neural networks.  
 ~~~
 
 ==== Geometry of polynomial neural networks
+
 ~~~
 {}{img_left}{images/Pnn.png}{alt text}{500}{}
 In this paper, we study the expressivity and learning process for polynomial neural networks (PNNs) with monomial activation functions. The weights of the network parametrize the neuromanifold. In this paper, we study certain neuromanifolds using tools from algebraic geometry: we give explicit descriptions as semialgebraic sets and characterize their Zariski closures, called neurovarieties. We study their dimension and associate an algebraic degree, the learning degree, to the neurovariety. The dimension serves as a geometric measure for the expressivity of the network, the learning degree is a measure for the complexity of training the network and provides upper bounds on the number of learnable functions. These theoretical results are accompanied with experiments.

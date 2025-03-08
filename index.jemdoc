@@ -1,38 +1,32 @@
 # jemdoc: menu{MENU}{index.html}, nofooter  
 ==Jiayi Li 
 
-~~~
-{}{img_left}{images/bio.jpg}{alt text}{125}{160}{}
-PhD Student,\n [http://statistics.ucla.edu/ Department of Statistics], \n[http://www.ucla.edu University of California Los Angeles (UCLA)]\n
-Pronouns: She\/her\/hers \n
-E-mail: /jiayi.li/ \[@\] g.ucla \[DOT\] edu
+{{<font color="Grey"> (Jiayi pronounced as</font>}} [https://www.youtube.com/watch?v=wzGG-RSWC20 jyä′ē′]{{<font color="Grey"> )</font>}}
 
-== About me
+Hello friend!  
+I recently moved from Southern California to Eastern Germany, where I am privileged to work with [https://www.mpi-cbg.de/research/researchgroups/currentgroups/heather-harrington/research wonderful colleagues] at the Max Planck Institute. Together, we explore questions at the interface of mathematics and the life sciences.
 
-I am a fifth year Ph.D. student in Statistics at UCLA. I work on *statistical machine learning* and algebraic statistics with my wonderful advisor Professor [https://www.math.ucla.edu/~montufar/ Guido Montúfar]. 
+My research focuses on the interplay between theoretical machine learning and numerical algebraic geometry ([https://www.sciencedirect.com/science/article/pii/S0747717116300529 what is ..?]). Specifically, I develop numerical algebro-geometric methods to analyze and characterize the optimization landscapes of neural networks, and I build machine-assisted tools to discover equations and reveal hidden structures—contributing to a deeper theoretical understanding of algebraic geometry.
 
-Prior to graduate school, I did a bachelor in Mathematics with 2 years at [https://www.hku.hk/ the University of Hong Kong] and  2 years at [http://www.math.stonybrook.edu/ SUNY Stony Brook]. I was fortunate to be advised by Professor [http://www.math.stonybrook.edu/~roblaz/ Robert Lazarsfeld] who introduced me to the miraculous world of classical algebraic geometry. 
+I spent my PhD years at the (sweet!) [https://statistics.ucla.edu/ Department of Statistics and Data Science] at UCLA, exploring mathematical machine learning, statistics, and data science. Earlier, I completed four years of undergraduate study in mathematics split between the University of Hong Kong and SUNY Stony Brook, where I first fell in love with algebraic geometry and other fascinating areas of modern mathematics.
 
-My first name is pronounced as jyä′ē′. 
-~~~
 
-~~~
- Here are topics I am now working on and/or hope to explore in the recent future:
-- Feature collapse in terminal phase of training
-- Polynomial neural network: optimization and generalization
-- Implicit bias and benign overfitting 
-~~~
+Best way to reach me is by email to [mailto:jli@mpi-cbg.de jli@mpi-cbg.de] \n(If you have one of my older email addresses, they still work :)
 
-== News
-- /Mar, 2024/ I am attending the [https://www.ipam.ucla.edu/programs/workshops/encore-workshop-on-computational-vs-statistical-gaps-in-learning-and-optimization/ EnCore Workshop on Learning and Optimization] locally at [https://www.ipam.ucla.edu/programs/workshops/encore-workshop-on-computational-vs-statistical-gaps-in-learning-and-optimization/ IPAM]. Ask me what's the best food on campus. 
-- /Dec, 2023/ I visited UW Madison to present at the [https://wiki.math.wisc.edu/index.php/Applied_Algebra_Seminar_Fall_2022 Applied Algebra Seminar]. Hello Madison!
-- /Oct, 2023/ I co-organized the [https://physicalsciences.ucla.edu/2nd-distinguished-women-in-statistics-and-data-science-workshop-shining-a-light-on-women-in-industry/ 2nd Distinguished Women in Statistics and Data Science Workshop]. Thanks to everyone who participated!
-- /Sep, 2023/ I stayed at IMSI, Chicago for the long program [https://www.imsi.institute/activities/algebraic-statistics-and-our-changing-world/ Algebraic Statistics and Our Changing World] until December. It was a fantastic program with amazing people. 
-- /July, 2023/ I spent the summer at the [https://www.mis.mpg.de/ Max Planck Institute for Mathematics in the Sciences] in Leipzig. I miss the nights spent at the Institute's library. 
 
-== Fellowships 
-- Summer Mentored Research Fellowship, UCLA 
-- ACM-W Scholarship, Association for Computing Machinery 
+== 
+{{<font color="Grey"> Here are news and updates on my recent and upcoming professional activities: </font>}}
+- \[Mar, 2025\]~ I will mentor a [https://www.logml.ai/projects/Jiayi-Li.html project] at the LOGML Summer School 2025. If this piques your interest, check out the [https://www.logml.ai program] and apply [https://docs.google.com/forms/d/e/1FAIpQLSf9WYWyRAm6wKPz5P_YIRAg9JFC0NsuvxQ__IjMZE5RpVU_wg/viewform here].
+- \[Jan, 2025\]~ We organized an AMS Special Session on Algebraic Methods in Machine Learning and Optimization at the [https://jointmathematicsmeetings.org/meetings/national/jmm2025/2314_program_ss13.html Joint Mathematics Meetings].
+- \[Dec, 2024\]~ I received the [https://physicalsciences.ucla.edu/ucla-ph-d-candidate-awarded-2024-dimitri-n-chorafas-foundation-prize/ Dimitris N. Chorafas Foundation Prize].
+- \[Dec, 2024\]~ I spent three memorable months at IPAM as part of the program [https://www.ipam.ucla.edu/programs/long-programs/mathematics-of-intelligences/ Mathematics of Intelligences].
+
+== 
+{{<font color="Grey"> I am grateful to the organizations and initiatives whose generous support has fueled my academic journey: </font>}}
+- Dimitris N. Chorafas Foundation Prize
+- Dissertation Year Fellowship, UCLA
+- Summer Mentored Research Fellowship, UCLA
+- ACM-W Scholarship, Association for Computing Machinery (ACM)
 - Cathay Bank Scholarship
 - Overseas Research Fellowship, The University of Hong Kong
 
