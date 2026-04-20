@@ -53,16 +53,36 @@ optimization properties of the architectures. Another power tool algebraic geome
 In a line of work on <a href="https://sites.google.com/view/sumiowatanabe/home/introduction-to-slt"  >singular learning theory</a>, this techinique has been developed to study the degeneracy of the loss landscape for statistical models with singular Fisher Information matrix under the Bayesian framework. 
 This unveals global dynamical structures, and connects to alignment and safety of modern AI models. </p>
   </div></div>
+<h4>Grokking as a Phase Transition between Competing Basins: a Singular Learning Theory Approach</h4>
+<figure>
+<img class="img-fluid" src="images/slt.png"   alt="alt text" width="600px" /><p>Grokking, the abrupt transition from memorization to generalisation after extended training, 
+suggests the presence of competing solution basins with distinct statistical properties.
+We study this phenomenon through the lens of Singular Learning Theory (SLT), 
+a Bayesian framework that characterizes the geometry of the loss landscape. The key measure is 
+local learning coefficient (LLC) which quantifies the local degeneracy of the loss surface. 
+SLT links lower-LLC basins to higher posterior mass concentration and lower expected generalisation error. 
+Leveraging SLT, we develop a basin-selection perspective on grokking in quadratic networks: LLC ranks competing near-zero-loss basins 
+by statistical preference, while the training-time transition between them is governed by optimisation dynamics. 
+We derive closed-form expressions for the LLC in quadratic networks trained on modular arithmetic tasks.  
+Empirically, we demonstrate that LLC trajectories estimated from training data track the onset of generalization and provide 
+an informative probe of the optimisation path.</p>
+<p>Joint work with Ben Cullen, Sergio Estan-Ruiz, and Riya Danait. <a href="https://arxiv.org/abs/2603.01192"  ><strong>[Paper]</strong></a> </p>
+</figure>
+<h4>Identifiability in Graphical Discrete Lyapunov Models</h4>
+<figure>
+<img class="img-fluid" src="images/control.png"   alt="alt text" width="400px" /><p>In this paper, we study discrete Lyapunov models, which consist of steady-state distributions of first-order vector autoregressive models. The parameter matrix of such a model encodes a directed graph whose vertices correspond to the components of the random vector. This combinatorial framework naturally allows for cycles in the graph structure. We focus on the fundamental problem of identifying the entries of the parameter matrix. In contrast to the classical setting, we assume non-Gaussian error terms, which allows us to use the higher-order cumulants of the model. In this setup, we show generic identifiability for directed acyclic graphs with self-loops at each vertex and show how to express the parameters as a rational function of the cumulants. Furthermore, we establish local identifiability for all directed graphs containing self loops at each vertex and no isolated vertices. Finally, we provide first results on the defining equations of the models, showing model equivalence for certain graphs and paving the way towards structure learning</p>
+<p>Joint work with Cecilie Olesen Recke, Sarah Lumpp, Nataliia Kushnerchuk, Janike Oldekop, Jane Ivy Coons, and Elina Robeva. <a href="https://arxiv.org/abs/2601.21818"  ><strong>[Paper]</strong></a> </p>
+</figure>
 <h4>Geometry of polynomial neural networks</h4>
 <figure>
 <img class="img-fluid" src="images/Pnn.png"   alt="alt text" width="500px" /><p>In this paper, we study the expressivity and learning process for polynomial neural networks (PNNs) with monomial activation functions. The weights of the network parametrize the neuromanifold. In this paper, we study certain neuromanifolds using tools from algebraic geometry: we give explicit descriptions as semialgebraic sets and characterize their Zariski closures, called neurovarieties. We study their dimension and associate an algebraic degree, the learning degree, to the neurovariety. The dimension serves as a geometric measure for the expressivity of the network, the learning degree is a measure for the complexity of training the network and provides upper bounds on the number of learnable functions. These theoretical results are accompanied with experiments.</p>
-<p>Joint work with <a href="https://www.kaiekubjas.com/"  >Kaie Kubjas</a> and <a href="https://maximilianwiesmann.github.io/"  >Maximilian Wiesmann</a>. <a href="https://arxiv.org/abs/2402.00949"  ><strong>[Paper]</strong></a> <a href="https://mathrepo.mis.mpg.de/PolynomialNeuralNetworks/"  ><strong>[Code]</strong></a></p>
+<p>Joint work with <a href="https://www.kaiekubjas.com/"  >Kaie Kubjas</a> and <a href="https://maximilianwiesmann.github.io/"  >Maximilian Wiesmann</a>. <a href="https://arxiv.org/abs/2402.00949"  ><strong>[Paper]</strong></a> </p>
 </figure>
 <h4>Discussion: Estimating means of bounded random variables by betting</h4>
 <figure>
 <img class="img-fluid" src="images/dai.jpeg"   alt="alt text" width="500px" /><p>In this work, we evaluate the betting method proposed by Waudby-Smith and Ramdas in generating confidence intervals and time-uniform confidence sequences for mean estimation with bounded observations.
 The methodology utilises composite non-negative martingales and establishes a connection to game-theoretic probability. We perform numerical comparisons with alternative methods and propose extension to vector settings. </p>
-<p>Joint work with <a href="https://liyuantong93.com/"  >Yuantong Li</a> and <a href="https://www.xiaowudai.org/"  >Xianwu Dai</a>. <a href="https://academic.oup.com/jrsssb/article/86/1/41/7303977"  ><strong>[Paper]</strong></a> <a href="https://github.com/Likelyt/Estimate-mean-with-betting"  ><strong>[Code]</strong></a></p>
+<p>Joint work with <a href="https://liyuantong93.com/"  >Yuantong Li</a> and <a href="https://www.xiaowudai.org/"  >Xianwu Dai</a>. <a href="https://academic.oup.com/jrsssb/article/86/1/41/7303977"  ><strong>[Paper]</strong></a> </p>
 </figure>
 <h4>Pull-back Geometry of Persistent Homology Encodings </h4>
 <figure>
@@ -74,7 +94,7 @@ their induced geometry. Importantly, the approach does not require training and 
 a particular task and permits a direct exploration of PH. We experimentally demonstrate
 that the pull-back norm can be used as a predictor of performance on downstream tasks and
 to select suitable PH encodings accordingly. All experiments were conducted by the first author; I worked with formulating the pull-back norm and the differential geometry background. </p>
-<p>Joint work with Shuang Liang, <a href="https://renata-turkes.github.io/"  >Renata Turkeš</a>, <a href="https://www.ninaotter.com/"  >Nina Otter</a> and <a href="https://www.math.ucla.edu/~montufar/"  >Guido Montúfar</a>. <a href="https://arxiv.org/pdf/2310.07073.pdf"  ><strong>[Paper]</strong></a> </p>
+<p>Joint work with Shuang Liang, <a href="https://renata-turkes.github.io/"  >Renata Turkeš</a>, <a href="https://www.ninaotter.com/"  >Nina Otter</a> and <a href="https://www.math.ucla.edu/~montufar/"  >Guido Montúfar</a>. <a href="https://openreview.net/pdf?id=7yswRA8zzw"  ><strong>[Paper]</strong></a> </p>
 </figure>
 <h4>Geometric Algorithms for predicting resilience and recovering damage in neural networks</h4>
 <figure>
