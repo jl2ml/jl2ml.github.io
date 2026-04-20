@@ -3,26 +3,34 @@
 
 {{<font color="Grey"> (Jiayi pronounced as</font>}} [https://www.youtube.com/watch?v=wzGG-RSWC20 jyä′ē′]{{<font color="Grey"> )</font>}}
 
-Hello friend!  
-I recently moved from Southern California to Eastern Germany, where I am privileged to work with [https://www.mpi-cbg.de/research/our-research/research-areas/mathematics-and-artificial-intelligence wonderful colleagues] at the Max Planck Institute. Together, we explore questions at the interface of mathematics and the life sciences.
+Hello friend.
 
-My research focuses on the interplay between theoretical machine learning and numerical algebraic geometry ([https://www.sciencedirect.com/science/article/pii/S0747717116300529 what is ..?]). Specifically, I develop numerical algebro-geometric methods to analyze and characterize the optimization landscapes of neural networks, and I build machine-assisted tools to discover equations and reveal hidden structures—contributing to a deeper theoretical understanding of algebraic geometry.
+I am a postdoc fellow at the [https://www.mpi-cbg.de/research/our-research/research-areas/mathematics-and-artificial-intelligence 
+Section of Mathematics and Artificial Intelligence] at the Max Planck Institute, CBG in Dresden, Germany.
 
-I spent my PhD years at the (sweet!) [https://statistics.ucla.edu/ Department of Statistics and Data Science] at UCLA, exploring mathematical machine learning, statistics, and data science. Earlier, I completed four years of undergraduate study in mathematics split between the University of Hong Kong and SUNY Stony Brook, where I first fell in love with algebraic geometry and other fascinating areas of modern mathematics.
+My research centers on the interplay between theoretical machine learning and numerical algebraic geometry 
+([https://www.sciencedirect.com/science/article/pii/S0747717116300529 what is ..?]). 
+My current focus is on developing rigorous mathematical tools to explain, predict, and constrain the behavior of artificial neural networks and, 
+in the longer term, to contribute to building the theoretical foundations for more responsible and trustworthy AI.
 
+I spent my PhD years at the [https://statistics.ucla.edu/ Department of Statistics and Data Science] at UCLA, 
+where I was a member of the Math Machine Learning group. 
+Prior to this, I completed four years of undergraduate study in mathematics split between the University of Hong Kong and SUNY Stony Brook, 
+where I had my first exposure to modern mathematics and was stunned by the elegance of algebraic geometry.
 
-Best way to reach me is by email to [mailto:jli@mpi-cbg.de jli@mpi-cbg.de] \n(If you have one of my older email addresses, they still work :)
-
-
+The best way to reach me is by email at [mailto:jli@mpi-cbg.de jli@mpi-cbg.de] \n(If you have one of my older email addresses, they still work :)
 == 
 {{<font color="Grey"> Here are news and updates on my recent and upcoming professional activities: </font>}}
-- \[Mar, 2025\]~ I will mentor a [https://www.logml.ai/projects/Jiayi-Li.html project] at the LOGML Summer School 2025. If this piques your interest, check out the [https://www.logml.ai program] and apply [https://docs.google.com/forms/d/e/1FAIpQLSf9WYWyRAm6wKPz5P_YIRAg9JFC0NsuvxQ__IjMZE5RpVU_wg/viewform here].
-- \[Jan, 2025\]~ We organized an AMS Special Session on Algebraic Methods in Machine Learning and Optimization at the [https://jointmathematicsmeetings.org/meetings/national/jmm2025/2314_program_ss13.html Joint Mathematics Meetings].
-- \[Dec, 2024\]~ I received the [https://physicalsciences.ucla.edu/ucla-ph-d-candidate-awarded-2024-dimitri-n-chorafas-foundation-prize/ Dimitris N. Chorafas Foundation Prize].
-- \[Dec, 2024\]~ I spent three memorable months at IPAM as part of the program [https://www.ipam.ucla.edu/programs/long-programs/mathematics-of-intelligences/ Mathematics of Intelligences].
-
+- \[Apr, 2026\]~ I will mentor a [https://www.logml.ai/projects/Jiayi-Li-and-Martin-Trapp.html project on loss landscape geometry] at the LOGML Summer School 2026. 
+  The project investigates the geometry of the loss landscape empirically, implementing variational inference algorithms to estimate local complexity near loss minima.
+- \[Jan, 2026\]~ We organized a special session on Algebraic Methods in Machine Learning and Optimization at the Joint Mathematics Meetings
+  ([https://meetings.ams.org/math/jmm2026/meetingapp.cgi/Session/13898 I], [https://meetings.ams.org/math/jmm2026/meetingapp.cgi/Session/14595 II]) 
+  \- the second consecutive year we have hosted sessions on this topic
+  (2025 [https://meetings.ams.org/math/jmm2025/meetingapp.cgi/Session/11225 I], [https://meetings.ams.org/math/jmm2025/meetingapp.cgi/Session/11462 II]). 
+  It has been exciting to watch how quickly this field is developing.
 == 
 {{<font color="Grey"> I am grateful to the organizations and initiatives whose generous support has fueled my academic journey: </font>}}
+- SIAM travel grant
 - Dimitris N. Chorafas Foundation Prize
 - Dissertation Year Fellowship, UCLA
 - Summer Mentored Research Fellowship, UCLA

@@ -2,8 +2,18 @@
 ==Research
 
 ~~~
-Among all the fascinating problems in machine learning theory, I am particularly interested in 
-applying and developing new algebraic methods to study the expressivity, optimization and generalization of neural networks.  
+Most of my work, and my research agenda for the near-to-mid-term future, centers on developing algebro-geometric tools to quantify theoretical properties of modern neural networks. 
+
+Algebraic geometry is a branch of mathematics that studies the geometric structure of solution sets to polynomial systems. In doing so, it bridges abstract algebra and geometry. 
+To me, the fansinating part of algebraic geometry is that it offers a way to infer global properties from local information, through delicate constructions and sometimes subtle observations.
+Admitabely, applying algebraic geometry is challenging: many classical theorems are not built to accommodate the noisiness in data typical of modern machine learning. 
+
+There has been much exicting progress along this direction. One can study the geometry of the function space parametrized by certain architectures through 
+[https://www.siam.org/publications/siam-news/articles/the-geometry-of-the-neuromanifold/ neuromanifolds], where sympoblic algebra tools provide a way to find the defining equations of the 
+function space. Then, the dimension, degree, also global optimization invariants such as generic Euclidean distance degree could be derived, which quantifies the expressivity and also 
+optimization properties of the architectures. Another power tool algebraic geometry offers is resolution of singularities. 
+In a line of work on [https://sites.google.com/view/sumiowatanabe/home/introduction-to-slt singular learning theory], this techinique has been developed to study the degeneracy of the loss landscape for statistical models with singular Fisher Information matrix under the Bayesian framework. 
+This unveals global dynamical structures, and connects to alignment and safety of modern AI models. 
 ~~~
 
 ==== Geometry of polynomial neural networks
