@@ -1,5 +1,5 @@
 # jemdoc: menu{MENU}{index.html}, nofooter  
-==Jiayi Li 
+==Jiayi Li
 
 {{<font color="Grey"> (Jiayi pronounced as</font>}} [https://www.youtube.com/watch?v=wzGG-RSWC20 jyä′ē′]{{<font color="Grey"> )</font>}}
 
@@ -14,13 +14,16 @@ My current focus is on developing rigorous mathematical tools to explain, predic
 in the longer term, to contribute to building the theoretical foundations for more responsible and trustworthy AI.
 
 I spent my PhD years at the [https://statistics.ucla.edu/ Department of Statistics and Data Science] at UCLA, 
-where I was a member of the Math ML group. My PhD thesis: [https://escholarship.org/uc/item/3sr093cz Structure, Symmetry, and Singularity in Learning Systems].
+where I was a member of the Math ML group. My PhD thesis: [https://escholarship.org/uc/item/3sr093cz Structure, Symmetry, and Singularity in Learning Systems]. 
 \n Earlier, I did an undergraduate  in mathematics split between the University of Hong Kong and SUNY Stony Brook, 
 where I had my first exposure to modern mathematics and was stunned by the elegance of algebraic geometry.
 
-The best way to reach me is by email at [mailto:jli@mpi-cbg.de jli@mpi-cbg.de]. (If you have one of my previous email addresses, they still work.)
+The best way to reach me is by email at [mailto:jli@mpi-cbg.de jli@mpi-cbg.de]. 
 \n Please find here a [bio.html short bio] and [images/jiayi-li-profile.jpg profile] for talks. Spiritually, I consider this [images/capibara.png figure] a slightly more faithful portrait. 
-== 
+~~~
+{}{raw}
+<hr class="tight-rule">
+~~~
 {{<font color="Grey"> Here are news and updates on my recent and upcoming professional activities: </font>}}
 - \[Apr, 2026\]~ I will mentor a [https://www.logml.ai/projects/Jiayi-Li-and-Martin-Trapp.html project on loss landscape geometry] at the LOGML Summer School 2026. 
   The project investigates the geometry of the loss landscape empirically, implementing variational inference algorithms to estimate local complexity near loss minima.
@@ -29,7 +32,10 @@ The best way to reach me is by email at [mailto:jli@mpi-cbg.de jli@mpi-cbg.de]. 
   \- the second consecutive year we have hosted sessions on this topic
   (2025 [https://meetings.ams.org/math/jmm2025/meetingapp.cgi/Session/11225 I], [https://meetings.ams.org/math/jmm2025/meetingapp.cgi/Session/11462 II]). 
   It has been exciting to watch how quickly this field is developing.
-== 
+~~~
+{}{raw}
+<hr class="tight-rule">
+~~~
 {{<font color="Grey"> I am grateful to the organizations and initiatives whose generous support has fueled my academic journey: </font>}}
 - SIAM travel grant
 - Dimitris N. Chorafas Foundation Prize
