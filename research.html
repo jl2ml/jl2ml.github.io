@@ -1,156 +1,103 @@
-  <!doctype html>
-  <html lang="en">
-  <head>
+<!doctype html>
+<html lang="en">
+<head>
   <meta charset="utf-8">
-  <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [['$','$'], ['\(','$\)']],
-      displayMath: [['$$','$$'], ['$\[','$\]']]
-    },
-    TeX: {
-      extensions: ["AMScd.js", "action.js", "autobold.js", "cancel.js", "begingroup.js", "color.js", "enclose.js"]
-    }
-  });
-  </script>
-  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="jemdoc.css" type="text/css" />
-  <title>Research</title>
-  </head>
-  <body>
-  <div class="title-divider"></div>
-  <main class="container" id="tlayout">
-  <div class="row">
-  <!-- Side menu -->
-  <aside class="col-12 col-md-3 " id="sidemenu">
-  <ul class="nav nav-pills flex-column">
-  <div class="menu-category">Jiayi</div>
-  <li class="nav-item menu-item"><a href="index.html" class="nav-link active">Home</a></li>
-  <li class="nav-item menu-item"><a href="cv.pdf" class="nav-link">CV</a></li>
-  <li class="nav-item menu-item"><a href="research.html" class="nav-link">Research</a></li>
-  <li class="nav-item menu-item"><a href="teaching.html" class="nav-link">Teaching</a></li>
-  <li class="nav-item menu-item"><a href="courses.html" class="nav-link">Courses</a></li>
-  <li class="nav-item menu-item"><a href="misc.html" class="nav-link">Misc.</a></li>
-  </ul>
-  </aside>
-  <div class="col-12 col-md-9" id="main-content">
-  <div class="toptitle">
-  <h1>Research</h1>
-  </div>
-  <div class="infoblock">
-  <div class="blockcontent">
-<p>Most of my work, and my research agenda for the near-to-mid-term future, centers on developing algebro-geometric tools to quantify theoretical properties of modern neural networks. </p>
-<p>Algebraic geometry is a branch of mathematics that studies the geometric structure of solution sets to polynomial systems. In doing so, it bridges abstract algebra and geometry. 
-To me, the fansinating part of algebraic geometry is that it offers a way to infer global properties from local information, through delicate constructions and sometimes subtle observations.
-Admitabely, applying algebraic geometry is challenging: many classical theorems are not built to accommodate the noisiness in data typical of modern machine learning. </p>
-<p>There has been much exicting progress along this direction. One can study the geometry of the function space parametrized by certain architectures through 
-<a href="https://www.siam.org/publications/siam-news/articles/the-geometry-of-the-neuromanifold/"  >neuromanifolds</a>, where sympoblic algebra tools provide a way to find the defining equations of the 
-function space. Then, the dimension, degree, also global optimization invariants such as generic Euclidean distance degree could be derived, which quantifies the expressivity and also 
-optimization properties of the architectures. Another power tool algebraic geometry offers is resolution of singularities. 
-In a line of work on <a href="https://sites.google.com/view/sumiowatanabe/home/introduction-to-slt"  >singular learning theory</a>, this techinique has been developed to study the degeneracy of the loss landscape for statistical models with singular Fisher Information matrix under the Bayesian framework. 
-This unveals global dynamical structures, and connects to alignment and safety of modern AI models. </p>
-  </div></div>
-<h4>Grokking as a Phase Transition between Competing Basins: a Singular Learning Theory Approach</h4>
-<figure>
-<img class="img-fluid" src="images/slt.png"   alt="alt text" width="600px" /><p>Grokking, the abrupt transition from memorization to generalisation after extended training, 
-suggests the presence of competing solution basins with distinct statistical properties.
-We study this phenomenon through the lens of Singular Learning Theory (SLT), 
-a Bayesian framework that characterizes the geometry of the loss landscape. The key measure is 
-local learning coefficient (LLC) which quantifies the local degeneracy of the loss surface. 
-SLT links lower-LLC basins to higher posterior mass concentration and lower expected generalisation error. 
-Leveraging SLT, we develop a basin-selection perspective on grokking in quadratic networks: LLC ranks competing near-zero-loss basins 
-by statistical preference, while the training-time transition between them is governed by optimisation dynamics. 
-We derive closed-form expressions for the LLC in quadratic networks trained on modular arithmetic tasks.  
-Empirically, we demonstrate that LLC trajectories estimated from training data track the onset of generalization and provide 
-an informative probe of the optimisation path.</p>
-<p>Joint work with Ben Cullen, Sergio Estan-Ruiz, and Riya Danait. <a href="https://arxiv.org/abs/2603.01192"  ><strong>[Paper]</strong></a> </p>
-</figure>
-<h4>Identifiability in Graphical Discrete Lyapunov Models</h4>
-<figure>
-<img class="img-fluid" src="images/control.png"   alt="alt text" width="400px" /><p>In this paper, we study discrete Lyapunov models, which consist of steady-state distributions of first-order vector autoregressive models. The parameter matrix of such a model encodes a directed graph whose vertices correspond to the components of the random vector. This combinatorial framework naturally allows for cycles in the graph structure. We focus on the fundamental problem of identifying the entries of the parameter matrix. In contrast to the classical setting, we assume non-Gaussian error terms, which allows us to use the higher-order cumulants of the model. In this setup, we show generic identifiability for directed acyclic graphs with self-loops at each vertex and show how to express the parameters as a rational function of the cumulants. Furthermore, we establish local identifiability for all directed graphs containing self loops at each vertex and no isolated vertices. Finally, we provide first results on the defining equations of the models, showing model equivalence for certain graphs and paving the way towards structure learning</p>
-<p>Joint work with Cecilie Olesen Recke, Sarah Lumpp, Nataliia Kushnerchuk, Janike Oldekop, Jane Ivy Coons, and Elina Robeva. <a href="https://arxiv.org/abs/2601.21818"  ><strong>[Paper]</strong></a> </p>
-</figure>
-<h4>Geometry of polynomial neural networks</h4>
-<figure>
-<img class="img-fluid" src="images/Pnn.png"   alt="alt text" width="500px" /><p>In this paper, we study the expressivity and learning process for polynomial neural networks (PNNs) with monomial activation functions. The weights of the network parametrize the neuromanifold. In this paper, we study certain neuromanifolds using tools from algebraic geometry: we give explicit descriptions as semialgebraic sets and characterize their Zariski closures, called neurovarieties. We study their dimension and associate an algebraic degree, the learning degree, to the neurovariety. The dimension serves as a geometric measure for the expressivity of the network, the learning degree is a measure for the complexity of training the network and provides upper bounds on the number of learnable functions. These theoretical results are accompanied with experiments.</p>
-<p>Joint work with <a href="https://www.kaiekubjas.com/"  >Kaie Kubjas</a> and <a href="https://maximilianwiesmann.github.io/"  >Maximilian Wiesmann</a>. <a href="https://arxiv.org/abs/2402.00949"  ><strong>[Paper]</strong></a> </p>
-</figure>
-<h4>Discussion: Estimating means of bounded random variables by betting</h4>
-<figure>
-<img class="img-fluid" src="images/dai.jpeg"   alt="alt text" width="500px" /><p>In this work, we evaluate the betting method proposed by Waudby-Smith and Ramdas in generating confidence intervals and time-uniform confidence sequences for mean estimation with bounded observations.
-The methodology utilises composite non-negative martingales and establishes a connection to game-theoretic probability. We perform numerical comparisons with alternative methods and propose extension to vector settings. </p>
-<p>Joint work with <a href="https://liyuantong93.com/"  >Yuantong Li</a> and <a href="https://www.xiaowudai.org/"  >Xianwu Dai</a>. <a href="https://academic.oup.com/jrsssb/article/86/1/41/7303977"  ><strong>[Paper]</strong></a> </p>
-</figure>
-<h4>Pull-back Geometry of Persistent Homology Encodings </h4>
-<figure>
-<img class="img-fluid" src="images/tda.png"   alt="alt text" width="300px" /><p>This paper investigates the spectrum of the Jacobian of PH data encodings and the pull-back geometry that they induce
-on the data manifold. Then, by measuring different perturbations and features on the data
-manifold with respect to this geometry, we can identify which of them are recognized or
-ignored by the PH encodings. This also allows us to compare different encodings in terms of
-their induced geometry. Importantly, the approach does not require training and testing on
-a particular task and permits a direct exploration of PH. We experimentally demonstrate
-that the pull-back norm can be used as a predictor of performance on downstream tasks and
-to select suitable PH encodings accordingly. All experiments were conducted by the first author; I worked with formulating the pull-back norm and the differential geometry background. </p>
-<p>Joint work with Shuang Liang, <a href="https://renata-turkes.github.io/"  >Renata Turkeš</a>, <a href="https://www.ninaotter.com/"  >Nina Otter</a> and <a href="https://www.math.ucla.edu/~montufar/"  >Guido Montúfar</a>. <a href="https://openreview.net/pdf?id=7yswRA8zzw"  ><strong>[Paper]</strong></a> </p>
-</figure>
-<h4>Geometric Algorithms for predicting resilience and recovering damage in neural networks</h4>
-<figure>
-<img class="img-fluid" src="images/Figure1_v4.png"   alt="" width="300px" /><p>In this paper, we establish a mathematical framework to analyze the resilience of artificial neural networks through 
-the lens of differential geometry. Our geometric language provides natural algorithms that identify local vulnerabilities in trained networks as well as recovery algorithms that dynamically adjust networks to compensate for damage. We reveal striking vulnerabilities in commonly used image analysis networks, like MLP's and CNN's trained on MNIST and CIFAR10 respectively. We also uncover high-performance recovery paths that enable the same networks to dynamically re-adjust their parameters to compensate for damage. Broadly, our work provides procedures that endow artificial systems with resilience and rapid-recovery routines to enhance their integration with IoT devices as well as enable their deployment for critical applications.<br /></p>
-<p>Joint work with <a href="https://thomsonlab.caltech.edu/people/graghava/"  >Guruprasad Raghavan</a> and <a href="https://thomsonlab.caltech.edu/"  >Matt Thomson</a>. <a href="https://arxiv.org/abs/2005.11603"  ><strong>[paper]</strong></a></p>
-</figure>
-<h4>Understanding expressivity of neural networks through tropical geometry</h4>
-<figure>
-<img class="img-fluid" src="images/patch_2.png"   alt="alt text" width="500px" /><p>Tropical geometry is a variant of algebraic geometry where people study polynomials and their geometric properties with addition 
-replaced by minimization and multiplication replaced by ordinary addition. Under this formulation, the polynomial graphs would resemble 
-piecewise linear meshes where numbers belong to the tropical semiring instead of a field. The maximum operation and the piecewise linear 
-property of the mesh leads us to think of neural networks with a particular family of activations and the linear regions cut out by the activation functions. 
-In 2018, Zhang et al. established the first connection  between tropical geometry and feedforward neural networks with ReLU activation
-by showing that the family of such neural networks is equivalent to the family of tropical rational maps. We generalized the results from Zhang's paper and 
-applied other techniques such as patchworking to study the expressive power of neural networks with piecewise linear activation functions. </p>
-</figure>
-<h4>Political Clusters: Legislator Communities from Voting Records </h4>
-<figure>
-<img class="img-fluid" src="images/congress115-SVD-k10.png"   alt="alt text" width="250px" /><p>We utilize voting records in conjunction with clustering and community
-detection algorithms to classify legislators into communities by political stance.
-The underlying assumption is that legislators with more similar voting records have
-more similar political stances. We consider legislatures from multiple countries: the
-United States House of Representatives, German Bundestag, Legislative Council of Hong
-Kong, and South Korean National Assembly. For each legislature, we collect roll call voting
-data and apply five different similarity functions to construct similarity matrices of
-the legislators. We then apply spectral clustering, Louvain
-with and without k-nearest neighbors preprocessing, and MBO
-modularity maximization methods to the similarity matrices.<br /></p>
-<p>Joint work with Kyung Ha, <a href="https://www.math.ucla.edu/~graceli/"  >Grace Li</a>, Blaine Talbut and <a href="https://ephesosx.github.io/"  >Thomas Tu</a> from Department of Mathematics, UCLA. </p>
-</figure>
-<h3>Other Publications</h3>
-<ol>
-<li><p>Dejun Guo, Xu Jin, Dan Shao, Jiayi Li, Yang Shen, Huan Tan “Image-Based Regulation of Mobile Robots without Pose Measurements”, IEEE Control Systems Letters
-(L-CSS), vol. 6, pp. 2156-2161, 2022.</p>
-</li>
-<li><p>Ziqi Huang, Yang Shen, Jiayi Li, Marcel Fey, Christian Brecher. “A Survey on AIDriven Digital Twins in Industry 4.0: Smart Manufacturing and Advanced Robotics”,
-Sensors, 2021.</p>
-</li>
-</ol>
-<h3>Editorial articles </h3>
-<ol>
-<li><p>Jiayi Li, “Computational Creativity: Bridging Art and Computer Science ”. XRDS 29, 4 (Summer 2023), pp. 5-6, 2023.</p>
-</li>
-<li><p>Jiayi Li, Karan Ahuja, “Making with a Sustainable Purpose: an Interview with Matthew L. Mauriello”. XRDS 27, 4 (Summer 2021), pp. 38-41, 2021.</p>
-</li>
-<li><p>Jiayi Li, Yingfei Wang “An Interview with Owen McCall from TREECYCLE”. XRDS 27, 4 (Summer 2021), pp. 42-45, 2021.</p>
-</li>
-</ol>
-  <!-- End of main body -->
-  </div>
-  </div>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research — Jiayi Li</title>
+  <meta name="description" content="Jiayi Li's research agenda in neuroalgebraic geometry, singular learning theory, identifiability, and reliable artificial intelligence.">
+  <link rel="canonical" href="https://jl2ml.github.io/research.html">
+  <meta name="theme-color" content="#f7f4ec">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell nav-shell">
+      <a class="wordmark" href="index.html" aria-label="Jiayi Li, home"><span class="wordmark-name">Jiayi Li</span><span class="wordmark-mark" aria-hidden="true">∿</span></a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="research.html" aria-current="page">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="teaching.html">Teaching &amp; mentoring</a>
+        <a href="service.html">Talks &amp; service</a>
+        <a href="cv.pdf">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero shell">
+      <p class="eyebrow">Research</p>
+      <h1>The geometry behind how learning systems behave.</h1>
+      <p class="page-lede">Modern neural networks are singular statistical models: symmetries, degeneracies, and non-identifiability are not edge cases but central features. I develop geometric and statistical tools that turn this structure into explanations, predictions, and guarantees.</p>
+      <div class="page-actions">
+        <a href="#structure">01 Structure</a><a href="#dynamics">02 Dynamics</a><a href="#guarantees">03 Guarantees</a><a href="publications.html">All publications</a>
+      </div>
+    </section>
+
+    <section class="theme-section section-pad" id="structure">
+      <div class="shell theme-layout">
+        <div class="theme-sticky"><p class="theme-number">01</p><h2>Structure</h2><p>What functions can a network represent, which parameters are recoverable, and what geometric invariants survive reparameterization?</p></div>
+        <div class="project-stack">
+          <article class="project-card">
+            <p class="rule-label">Neuroalgebraic geometry</p><h3>Geometry of polynomial neural networks</h3>
+            <p>The weights of a polynomial network parametrize a semialgebraic function space. Its dimension measures expressivity, while the algebraic degree of its closure captures aspects of learning complexity. This gives a coordinate-independent vocabulary for comparing architectures.</p>
+            <p class="project-meta"><a href="https://arxiv.org/abs/2402.00949">Paper</a><a href="publications.html#peer-reviewed">Publication details</a></p>
+          </article>
+          <article class="project-card">
+            <p class="rule-label">Algebraic statistics</p><h3>Identifiability in graphical discrete Lyapunov models</h3>
+            <p>For directed systems at steady state, higher-order cumulants can recover information that covariance alone cannot. We establish generic and local identifiability results and connect them to the graph encoded by the system's parameter matrix.</p>
+            <p class="project-meta"><a href="https://arxiv.org/abs/2601.21818">Paper</a><a href="publications.html#preprints">Publication details</a></p>
+          </article>
+          <article class="project-card">
+            <p class="rule-label">Geometric data analysis</p><h3>Pull-back geometry of persistent-homology encodings</h3>
+            <p>The Jacobian of an encoding induces a geometry on the data manifold. Measuring perturbations in this geometry shows which features a persistent-homology representation recognizes or ignores—without first training a downstream model.</p>
+            <p class="project-meta"><a href="https://openreview.net/forum?id=7yswRA8zzw">Paper</a><a href="publications.html#peer-reviewed">Publication details</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="theme-section section-pad" id="dynamics">
+      <div class="shell theme-layout">
+        <div class="theme-sticky"><p class="theme-number">02</p><h2>Dynamics</h2><p>How does training move among qualitatively different solutions, and which local quantities reveal a change of learning regime?</p></div>
+        <div class="project-stack">
+          <article class="project-card">
+            <p class="rule-label">Singular learning theory</p><h3>A basin-selection perspective on grokking</h3>
+            <p>We view grokking as a transition between competing near-zero-loss basins. The local learning coefficient ranks the basins by statistical preference, while optimization dynamics determine when training moves between them. In quadratic networks, this perspective yields closed-form results and an empirical probe of the path to generalization.</p>
+            <p class="project-meta"><a href="https://arxiv.org/abs/2603.01192">Paper</a><a href="publications.html#preprints">Publication details</a></p>
+          </article>
+          <article class="project-card">
+            <p class="rule-label">Current direction</p><h3>Local complexity along the optimization path</h3>
+            <p>I am interested in using singular invariants—not only endpoint loss—to describe how representations and effective model complexity evolve during training. The goal is to connect rigorous asymptotics with quantities that can be estimated in contemporary learning systems.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="theme-section section-pad" id="guarantees">
+      <div class="shell theme-layout">
+        <div class="theme-sticky"><p class="theme-number">03</p><h2>Guarantees</h2><p>Which conclusions about interpretability, generalization, and robustness are invariant—and therefore candidates for proof?</p></div>
+        <div class="project-stack">
+          <article class="project-card">
+            <p class="rule-label">Reliable AI</p><h3>Identifiability before interpretation</h3>
+            <p>An explanation tied to a non-identifiable coordinate system can change while the learned function remains the same. My agenda treats symmetry, equivalence, and identifiability as prerequisites for claims about what a model has learned.</p>
+          </article>
+          <article class="project-card">
+            <p class="rule-label">Resilient systems</p><h3>Predicting vulnerability and recovering from damage</h3>
+            <p>Differential geometry can locate vulnerable directions in a trained network and construct recovery paths after parameters are damaged. This early work motivates a broader question: how can geometric structure support guarantees for systems deployed under perturbation?</p>
+            <p class="project-meta"><a href="https://arxiv.org/abs/2005.11603">Paper</a><a href="publications.html#preprints">Publication details</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad shell two-column">
+      <div><p class="eyebrow">The through line</p><h2 class="section-title">Structure → dynamics → guarantees</h2><p class="section-lede">These themes are not separate projects. The structure of a model shapes its loss landscape; that landscape shapes learning dynamics; and invariant structure determines which explanations and guarantees can be trusted.</p></div>
+      <aside class="aside-note"><h2>Working together</h2><p>I enjoy collaborations across algebraic geometry, statistics, learning theory, and scientific machine learning.</p><a href="mailto:jli@mpi-cbg.de">Start a conversation</a></aside>
+    </section>
   </main>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
-  </html>
+
+  <footer class="site-footer"><div class="shell footer-grid"><div><p class="footer-name">Jiayi Li</p><p>Geometry, learning, and reliable AI.</p></div><div class="footer-links"><a href="mailto:jli@mpi-cbg.de">Email</a><a href="https://scholar.google.com/citations?user=ZD9YWtIAAAAJ">Scholar</a><a href="https://github.com/jl2ml">GitHub</a><a href="cv.pdf">CV</a></div><p class="footer-meta">Last updated August 2026</p></div></footer>
+</body>
+</html>
