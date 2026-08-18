@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jiayi Li — Mathematical Foundations of Learning Systems</title>
-  <meta name="description" content="Jiayi Li is a mathematical machine learning researcher working on neuroalgebraic geometry, singular learning theory, identifiability, and reliable AI.">
+  <title>Jiayi Li — Geometry, Learning Dynamics, and AI Alignment</title>
+  <meta name="description" content="Jiayi Li develops mathematical foundations for AI alignment using neuroalgebraic geometry, singular learning theory, identifiability, and statistics.">
   <link rel="canonical" href="https://jl2ml.github.io/">
   <meta name="theme-color" content="#f7f4ec">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Jiayi Li — Mathematical Foundations of Learning Systems">
-  <meta property="og:description" content="Research at the intersection of algebraic geometry, singular learning theory, and trustworthy AI.">
+  <meta property="og:title" content="Jiayi Li — Geometry, Learning Dynamics, and AI Alignment">
+  <meta property="og:description" content="From the geometry of learning to the mathematics of AI alignment.">
   <meta property="og:url" content="https://jl2ml.github.io/">
   <meta property="og:image" content="https://jl2ml.github.io/images/jiayi-li-profile.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Jiayi Li — Mathematical Foundations of Learning Systems">
-  <meta name="twitter:description" content="Research at the intersection of algebraic geometry, singular learning theory, and trustworthy AI.">
+  <meta name="twitter:title" content="Jiayi Li — Geometry, Learning Dynamics, and AI Alignment">
+  <meta name="twitter:description" content="From the geometry of learning to the mathematics of AI alignment.">
   <meta name="twitter:image" content="https://jl2ml.github.io/images/jiayi-li-profile.jpg">
   <link rel="stylesheet" href="site.css">
   <script type="application/ld+json">
@@ -43,7 +43,7 @@
       "Neuroalgebraic geometry",
       "Singular learning theory",
       "Identifiability",
-      "Trustworthy artificial intelligence"
+      "Artificial intelligence alignment"
     ]
   }
   </script>
@@ -71,15 +71,15 @@
   <main id="main">
     <section class="hero shell">
       <div class="hero-copy">
-        <p class="eyebrow">Mathematical foundations of learning systems</p>
-        <h1>Geometry for understanding how neural networks <em>represent, learn, and generalize.</em></h1>
+        <p class="eyebrow">Geometry · Learning dynamics · AI alignment</p>
+        <h1>From the geometry of learning to the <em>mathematics of AI alignment.</em></h1>
         <p class="hero-lede">
-          I am a postdoctoral researcher in the
-          <a href="https://www.mpi-cbg.de/research/our-research/research-areas/mathematics-and-artificial-intelligence">Section of Mathematics and Artificial Intelligence</a>
-          at MPI-CBG in Dresden. My research connects algebraic geometry, singular learning theory, and statistics to make the behavior of modern learning systems mathematically legible.
+          My research asks how the geometry of a learning system shapes what it can represent, which solutions training selects, and which features of the resulting model are identifiable. I use algebraic geometry, singular learning theory, and statistics to develop rigorous foundations for interpretability, reliability, and AI alignment.
         </p>
         <p class="hero-note">
-          I received my PhD in Statistics from UCLA, where I was a member of the Mathematical Machine Learning Group. In September 2026, I will join ILIAD as a Fellow.
+          I am a postdoctoral researcher in the
+          <a href="https://www.mpi-cbg.de/research/our-research/research-areas/mathematics-and-artificial-intelligence">Section of Mathematics and Artificial Intelligence</a>
+          at MPI-CBG in Dresden. I received my PhD in Statistics from UCLA's Mathematical Machine Learning Group and will join ILIAD as a Fellow in September 2026.
         </p>
         <div class="hero-actions" aria-label="Key links">
           <a class="button button-primary" href="research.html">Explore my research</a>
@@ -100,6 +100,7 @@
         <div class="portrait-caption">
           <p class="caption-role">Postdoctoral researcher</p>
           <p>MPI-CBG · Dresden, Germany</p>
+          <p class="portrait-note">A formal portrait. The <a href="#beyond-the-papers">spiritually accurate version</a> appears below.</p>
         </div>
         <div class="portrait-accent" aria-hidden="true"></div>
       </aside>
@@ -113,7 +114,7 @@
             <h2>From structure to dynamics to guarantees</h2>
           </div>
           <p>
-            Neural networks are highly singular statistical models. I develop tools for describing their geometry, predicting their learning behavior, and determining which claims about them can be made rigorous.
+            Questions of interpretability and alignment depend on three prior questions: what a model can represent, how training selects its behavior, and which properties remain meaningful under reparameterization. My work follows this chain from structure to dynamics to guarantees.
           </p>
         </div>
 
@@ -135,8 +136,8 @@
           <article class="pillar-card">
             <p class="pillar-number">03</p>
             <h3>Guarantees</h3>
-            <p class="pillar-kicker">What can we know reliably?</p>
-            <p>Identifiability and invariant structure are the starting point for provable interpretability, robustness, and trustworthy AI.</p>
+            <p class="pillar-kicker">Which claims survive?</p>
+            <p>Identifiability and invariant structure separate stable facts about a model from artifacts of parameterization—the basis for rigorous interpretability, reliability, and alignment.</p>
             <a href="research.html#guarantees">Mathematical guarantees <span aria-hidden="true">→</span></a>
           </article>
         </div>
@@ -144,36 +145,47 @@
     </section>
 
     <section class="selected-work section-pad shell" id="selected-work">
-      <div class="section-heading">
-        <p class="eyebrow">Selected work</p>
-        <h2>Three views of learning through geometry</h2>
+      <div class="section-heading selected-work-heading">
+        <div>
+          <p class="eyebrow">Selected work</p>
+          <h2>Three views of learning through geometry</h2>
+        </div>
+        <p>These projects move from the geometry of representable functions, through the dynamics that select solutions, to the identifiability needed for reliable interpretation.</p>
       </div>
 
       <div class="work-list">
         <article class="work-card">
-          <div class="work-visual warm">
-            <img src="images/slt.png" alt="Training loss, accuracy, local learning coefficient, and curvature across memorization and generalization regimes" width="1270" height="454">
-          </div>
+          <figure class="work-concept structure-concept">
+            <svg viewBox="0 0 520 330" role="img" aria-labelledby="pnn-diagram-title pnn-diagram-desc">
+              <title id="pnn-diagram-title">Parameters map to a neuromanifold in function space</title>
+              <desc id="pnn-diagram-desc">Network parameters map to the neuromanifold of representable functions. Its dimension measures expressivity, while its learning degree measures algebraic training complexity.</desc>
+              <defs><marker id="arrow-structure" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z"></path></marker></defs>
+              <text class="diagram-overline" x="38" y="29">PARAMETER SPACE</text>
+              <text class="diagram-overline" x="344" y="29">FUNCTION SPACE</text>
+              <g class="diagram-lines">
+                <line x1="58" y1="83" x2="121" y2="65"></line><line x1="58" y1="83" x2="121" y2="117"></line>
+                <line x1="58" y1="171" x2="121" y2="117"></line><line x1="58" y1="171" x2="121" y2="187"></line>
+                <line x1="121" y1="65" x2="183" y2="127"></line><line x1="121" y1="117" x2="183" y2="127"></line><line x1="121" y1="187" x2="183" y2="127"></line>
+              </g>
+              <g class="diagram-nodes"><circle cx="58" cy="83" r="9"></circle><circle cx="58" cy="171" r="9"></circle><circle cx="121" cy="65" r="9"></circle><circle cx="121" cy="117" r="9"></circle><circle cx="121" cy="187" r="9"></circle><circle cx="183" cy="127" r="10"></circle></g>
+              <text class="diagram-math" x="112" y="226" text-anchor="middle">θ ∈ Θ</text>
+              <path class="diagram-arrow" d="M216 127 H290" marker-end="url(#arrow-structure)"></path>
+              <text class="diagram-map-label" x="253" y="111" text-anchor="middle">φ</text>
+              <path class="diagram-surface" d="M337 66 C386 42 474 65 475 124 C476 183 428 224 362 205 C308 189 299 94 337 66 Z"></path>
+              <circle class="diagram-point" cx="350" cy="102" r="5"></circle><circle class="diagram-point" cx="410" cy="76" r="5"></circle><circle class="diagram-point" cx="444" cy="153" r="5"></circle>
+              <text class="diagram-math diagram-accent" x="400" y="134" text-anchor="middle">𝓜 = im(φ)</text>
+              <line class="diagram-divider" x1="30" y1="258" x2="490" y2="258"></line>
+              <text class="diagram-key" x="138" y="289" text-anchor="middle">dim 𝓜</text>
+              <text class="diagram-note" x="138" y="311" text-anchor="middle">measures expressivity</text>
+              <text class="diagram-key" x="382" y="289" text-anchor="middle">learning degree</text>
+              <text class="diagram-note" x="382" y="311" text-anchor="middle">measures training complexity</text>
+            </svg>
+          </figure>
           <div class="work-copy">
-            <p class="work-type">Singular learning theory · 2026</p>
-            <h3>A Basin-Selection Perspective on Grokking</h3>
-            <p>We interpret grokking as a transition between competing solution basins and show how the local learning coefficient tracks their statistical preference.</p>
-            <p class="work-authors">With Ben Cullen, Sergio Estan-Ruiz, and Riya Danait</p>
-            <div class="work-links">
-              <a href="https://arxiv.org/abs/2603.01192">Paper</a>
-              <a href="research.html#dynamics">Research context</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="work-card reverse">
-          <div class="work-visual cool">
-            <img src="images/Pnn.png" alt="Three geometric function spaces traced by polynomial neural networks" width="2178" height="712">
-          </div>
-          <div class="work-copy">
-            <p class="work-type">Neuroalgebraic geometry · 2024</p>
+            <p class="work-type">01 · Structure · Neuroalgebraic geometry</p>
             <h3>Geometry of Polynomial Neural Networks</h3>
-            <p>We characterize the function spaces of polynomial networks as semialgebraic sets and introduce geometric measures of expressivity and learning complexity.</p>
+            <p class="work-question">What geometry is traced out by the functions a network can represent?</p>
+            <p>We describe the function spaces of polynomial networks as semialgebraic sets. Their dimension measures expressivity, while the learning degree captures an algebraic aspect of training complexity.</p>
             <p class="work-authors">With Kaie Kubjas and Maximilian Wiesmann</p>
             <div class="work-links">
               <a href="https://arxiv.org/abs/2402.00949">Paper</a>
@@ -183,52 +195,115 @@
         </article>
 
         <article class="work-card">
-          <div class="work-visual neutral">
-            <img src="images/control.png" alt="A dynamical system evolving from a stable region into an oscillatory regime" width="874" height="284">
-          </div>
+          <figure class="work-concept dynamics-concept">
+            <svg viewBox="0 0 520 330" role="img" aria-labelledby="grokking-diagram-title grokking-diagram-desc">
+              <title id="grokking-diagram-title">Training moves between competing solution basins</title>
+              <desc id="grokking-diagram-desc">Memorizing and generalizing basins both have near-zero training loss. A late optimization transition moves to the generalizing basin, whose lower local learning coefficient indicates greater statistical preference.</desc>
+              <defs><marker id="arrow-dynamics" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z"></path></marker></defs>
+              <text class="diagram-overline" x="260" y="29" text-anchor="middle">TWO NEAR-ZERO-LOSS SOLUTIONS</text>
+              <path class="diagram-landscape" d="M35 75 C76 80 85 219 157 219 C220 219 216 107 275 107 C333 107 328 223 404 223 C460 223 477 83 505 78"></path>
+              <circle class="diagram-basin warm-point" cx="157" cy="211" r="9"></circle><circle class="diagram-basin cool-point" cx="404" cy="215" r="9"></circle>
+              <path class="diagram-trajectory" d="M164 194 C221 128 322 131 396 197" marker-end="url(#arrow-dynamics)"></path>
+              <text class="diagram-note trajectory-label" x="280" y="137" text-anchor="middle">late optimization transition</text>
+              <g class="diagram-small-tag"><rect x="107" y="172" width="100" height="25" rx="12.5"></rect><text x="157" y="189">train loss ≈ 0</text></g>
+              <g class="diagram-small-tag cool-tag"><rect x="354" y="176" width="100" height="25" rx="12.5"></rect><text x="404" y="193">train loss ≈ 0</text></g>
+              <text class="diagram-label" x="157" y="254" text-anchor="middle">MEMORIZATION</text>
+              <text class="diagram-key" x="157" y="280" text-anchor="middle">λ<tspan baseline-shift="sub" font-size="12">mem</tspan></text>
+              <text class="diagram-label" x="404" y="254" text-anchor="middle">GENERALIZATION</text>
+              <text class="diagram-key diagram-accent" x="404" y="280" text-anchor="middle">λ<tspan baseline-shift="sub" font-size="12">gen</tspan> &lt; λ<tspan baseline-shift="sub" font-size="12">mem</tspan></text>
+              <line class="diagram-divider" x1="30" y1="295" x2="490" y2="295"></line>
+              <text class="diagram-note" x="260" y="319" text-anchor="middle">lower LLC  →  more posterior mass  →  lower expected test error</text>
+            </svg>
+          </figure>
           <div class="work-copy">
-            <p class="work-type">Algebraic statistics · 2026</p>
+            <p class="work-type">02 · Dynamics · Singular learning theory</p>
+            <h3>Grokking as a Phase Transition between Competing Basins: a Singular Learning Theory Approach</h3>
+            <p class="work-question">Why does a network generalize long after it has already fit the training data?</p>
+            <p>We interpret grokking as a transition between competing near-zero-loss basins. The local learning coefficient ranks their statistical preference; optimization dynamics determine when training moves between them.</p>
+            <p class="work-authors">With Ben Cullen, Sergio Estan-Ruiz, and Riya Danait</p>
+            <div class="work-links">
+              <a href="https://arxiv.org/abs/2603.01192">Paper</a>
+              <a href="research.html#dynamics">Research context</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <figure class="work-concept guarantees-concept">
+            <svg viewBox="0 0 520 330" role="img" aria-labelledby="lyapunov-diagram-title lyapunov-diagram-desc">
+              <title id="lyapunov-diagram-title">Higher-order cumulants identify a directed dynamical system</title>
+              <desc id="lyapunov-diagram-desc">For a steady-state vector autoregressive model, non-Gaussian third- and fourth-order cumulants supplement covariance information and allow the directed parameter matrix to be recovered.</desc>
+              <defs><marker id="arrow-guarantees" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z"></path></marker></defs>
+              <text class="diagram-overline" x="260" y="25" text-anchor="middle">STEADY-STATE VECTOR AUTOREGRESSION</text>
+              <text class="diagram-math" x="260" y="56" text-anchor="middle">x<tspan baseline-shift="sub" font-size="12">t+1</tspan> = A x<tspan baseline-shift="sub" font-size="12">t</tspan> + ε<tspan baseline-shift="sub" font-size="12">t</tspan></text>
+              <g class="diagram-lines arrowed-lines">
+                <line x1="72" y1="134" x2="133" y2="107" marker-end="url(#arrow-guarantees)"></line>
+                <line x1="71" y1="151" x2="134" y2="188" marker-end="url(#arrow-guarantees)"></line>
+                <line x1="157" y1="125" x2="157" y2="171" marker-end="url(#arrow-guarantees)"></line>
+                <path d="M49 125 C24 90 99 83 78 124" marker-end="url(#arrow-guarantees)"></path>
+                <path d="M139 91 C125 60 189 60 174 92" marker-end="url(#arrow-guarantees)"></path>
+                <path d="M139 190 C120 227 190 230 174 193" marker-end="url(#arrow-guarantees)"></path>
+              </g>
+              <g class="diagram-nodes large-nodes"><circle cx="58" cy="143" r="18"></circle><circle cx="157" cy="105" r="18"></circle><circle cx="157" cy="190" r="18"></circle></g>
+              <text class="diagram-node-label" x="58" y="149" text-anchor="middle">x₁</text><text class="diagram-node-label" x="157" y="111" text-anchor="middle">x₂</text><text class="diagram-node-label" x="157" y="196" text-anchor="middle">x₃</text>
+              <text class="diagram-label" x="111" y="248" text-anchor="middle">A ENCODES THE GRAPH</text>
+              <path class="diagram-arrow" d="M198 153 H250" marker-end="url(#arrow-guarantees)"></path>
+              <g class="diagram-cumulant-stack">
+                <text class="diagram-cumulants muted-cumulant" x="270" y="111">κ₂</text><text class="diagram-note" x="313" y="108">covariance</text>
+                <text class="diagram-cumulants" x="270" y="158">κ₃</text><text class="diagram-note" x="313" y="155">non-Gaussian</text>
+                <text class="diagram-cumulants" x="270" y="205">κ₄</text><text class="diagram-note" x="313" y="202">information</text>
+              </g>
+              <path class="diagram-arrow" d="M371 153 H416" marker-end="url(#arrow-guarantees)"></path>
+              <g class="diagram-result"><rect x="426" y="105" width="68" height="96" rx="8"></rect><text x="460" y="144">A</text><text x="460" y="174">recovered</text></g>
+              <line class="diagram-divider" x1="30" y1="274" x2="490" y2="274"></line>
+              <text class="diagram-key" x="260" y="302" text-anchor="middle">DAG + self-loops  →  generic identifiability</text>
+              <text class="diagram-note" x="260" y="322" text-anchor="middle">parameters are rational functions of the cumulants</text>
+            </svg>
+          </figure>
+          <div class="work-copy">
+            <p class="work-type">03 · Guarantees · Identifiability</p>
             <h3>Identifiability in Graphical Discrete Lyapunov Models</h3>
-            <p>Higher-order cumulants make parameters identifiable beyond the Gaussian setting, connecting algebraic geometry with structure learning for directed systems.</p>
+            <p class="work-question">When can a directed mechanism be recovered from steady-state observations?</p>
+            <p>Higher-order cumulants reveal parameters that covariance alone cannot. This establishes identifiability beyond the Gaussian setting and provides a foundation for structure learning in directed systems.</p>
             <p class="work-authors">With Cecilie Olesen Recke, Sarah Lumpp, Nataliia Kushnerchuk, Janike Oldekop, Jane Ivy Coons, and Elina Robeva</p>
             <div class="work-links">
               <a href="https://arxiv.org/abs/2601.21818">Paper</a>
-              <a href="research.html#structure">Research context</a>
+              <a href="research.html#guarantees">Research context</a>
             </div>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="news-section section-pad">
+    <section class="news-section section-pad" id="research-in-motion">
       <div class="shell news-grid">
         <div class="section-heading news-intro">
-          <p class="eyebrow">Now & next</p>
+          <p class="eyebrow">Now &amp; next</p>
           <h2>Research in motion</h2>
           <p>Recent papers, talks, programs, and community-building around the mathematics of learning.</p>
         </div>
         <div class="news-list">
           <article class="news-item">
-            <time datetime="2026-08">Aug 2026</time>
-            <p>I will speak at the Mathematics Colloquium at Nanjing University and participate in IPAM's <a href="https://www.ipam.ucla.edu/">Foundations of Interpretability</a> workshop at UCLA.</p>
+            <time datetime="2026-08-31">Aug–Sep 2026</time>
+            <p>I will participate in IPAM's <a href="https://www.ipam.ucla.edu/programs/workshops/foundations-of-interpretability/?tab=overview">Foundations of Interpretability</a> workshop at UCLA, connecting mathematical perspectives on learning with questions in interpretability and AI safety.</p>
           </article>
           <article class="news-item">
-            <time datetime="2026-09">Sep 2026</time>
-            <p>I will begin an ILIAD Fellowship, developing connections between mathematical learning theory and reliable AI.</p>
+            <time datetime="2026-09-07">Sep 2026</time>
+            <p>I will begin an <a href="https://www.iliad.ac/fellowship">ILIAD Fellowship</a> in applied mathematics for AI alignment, developing a project that connects learning geometry with reliable AI.</p>
           </article>
           <article class="news-item">
-            <time datetime="2026-10">Oct 2026</time>
-            <p>I am lead organizer of the inaugural Singular Learning Theory Days at MPI-CBG in Dresden, October 26–27.</p>
+            <time datetime="2026-10-26">Oct 2026</time>
+            <p>I am organizing the inaugural <a href="https://plan.events.mpg.de/event/783/">Singular Learning Theory Days</a> at MPI-CBG in Dresden, October 26–27. <a href="https://plan.events.mpg.de/event/783/registrations/806/">Registration is open until September 1.</a></p>
           </article>
           <article class="news-item">
-            <time datetime="2027-01">Spring 2027</time>
-            <p>I will be in residence at ICERM for the semester program <em>Metric Algebraic Geometry — Going Global</em>.</p>
+            <time datetime="2027-01-20">Spring 2027</time>
+            <p>I will be in residence at ICERM for the semester program <a href="https://icerm.brown.edu/program/semester_program/sp-s27"><em>Metric Algebraic Geometry — Going Global</em></a>.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="human-note shell section-pad">
+    <section class="human-note shell section-pad" id="beyond-the-papers">
       <div class="human-copy">
         <p class="eyebrow">Beyond the papers</p>
         <h2>Mathematics is also a community.</h2>
@@ -246,7 +321,7 @@
     <div class="shell footer-grid">
       <div>
         <p class="footer-name">Jiayi Li</p>
-        <p>Geometry, learning, and reliable AI.</p>
+        <p>Geometry, learning dynamics, and AI alignment.</p>
       </div>
       <div class="footer-links">
         <a href="mailto:jli@mpi-cbg.de">Email</a>
