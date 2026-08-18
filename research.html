@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Research — Jiayi Li</title>
-  <meta name="description" content="Jiayi Li's research agenda in neuroalgebraic geometry, singular learning theory, identifiability, and reliable artificial intelligence.">
+  <meta name="description" content="Jiayi Li's research agenda connecting neuroalgebraic geometry, singular learning theory, identifiability, and the mathematical foundations of AI alignment.">
   <link rel="canonical" href="https://jl2ml.github.io/research.html">
   <meta name="theme-color" content="#f7f4ec">
   <link rel="stylesheet" href="site.css">
@@ -27,9 +27,9 @@
 
   <main id="main">
     <section class="page-hero shell">
-      <p class="eyebrow">Research</p>
-      <h1>The geometry behind how learning systems behave.</h1>
-      <p class="page-lede">Modern neural networks are singular statistical models: symmetries, degeneracies, and non-identifiability are not edge cases but central features. I develop geometric and statistical tools that turn this structure into explanations, predictions, and guarantees.</p>
+      <p class="eyebrow">Research agenda</p>
+      <h1>How structure becomes behavior in learning systems.</h1>
+      <p class="page-lede">Modern neural networks are singular statistical models: symmetry and non-identifiability shape both what they can represent and how they learn. I use algebraic geometry, singular learning theory, and statistics to study this chain—from model structure, through training dynamics, to the invariant claims needed for interpretability, reliability, and AI alignment.</p>
       <div class="page-actions">
         <a href="#structure">01 Structure</a><a href="#dynamics">02 Dynamics</a><a href="#guarantees">03 Guarantees</a><a href="publications.html">All publications</a>
       </div>
@@ -37,21 +37,20 @@
 
     <section class="theme-section section-pad" id="structure">
       <div class="shell theme-layout">
-        <div class="theme-sticky"><p class="theme-number">01</p><h2>Structure</h2><p>What functions can a network represent, which parameters are recoverable, and what geometric invariants survive reparameterization?</p></div>
+        <div class="theme-sticky"><p class="theme-number">01</p><h2>Structure</h2><p>What functions can a network represent, and which geometric quantities describe that function space independently of coordinates?</p></div>
         <div class="project-stack">
           <article class="project-card">
-            <p class="rule-label">Neuroalgebraic geometry</p><h3>Geometry of polynomial neural networks</h3>
-            <p>The weights of a polynomial network parametrize a semialgebraic function space. Its dimension measures expressivity, while the algebraic degree of its closure captures aspects of learning complexity. This gives a coordinate-independent vocabulary for comparing architectures.</p>
+            <p class="rule-label">Neuroalgebraic geometry · 2024</p><h3>Geometry of polynomial neural networks</h3>
+            <p class="project-question">How does architecture shape the geometry of representable functions?</p>
+            <p>The weights of a polynomial network parametrize a semialgebraic function space. Its dimension measures expressivity, while its learning degree captures an algebraic aspect of training complexity. Together, these invariants give a coordinate-independent vocabulary for comparing architectures.</p>
+            <p class="project-collaborators">With Kaie Kubjas and Maximilian Wiesmann</p>
             <p class="project-meta"><a href="https://arxiv.org/abs/2402.00949">Paper</a><a href="publications.html#peer-reviewed">Publication details</a></p>
           </article>
           <article class="project-card">
-            <p class="rule-label">Algebraic statistics</p><h3>Identifiability in graphical discrete Lyapunov models</h3>
-            <p>For directed systems at steady state, higher-order cumulants can recover information that covariance alone cannot. We establish generic and local identifiability results and connect them to the graph encoded by the system's parameter matrix.</p>
-            <p class="project-meta"><a href="https://arxiv.org/abs/2601.21818">Paper</a><a href="publications.html#preprints">Publication details</a></p>
-          </article>
-          <article class="project-card">
-            <p class="rule-label">Geometric data analysis</p><h3>Pull-back geometry of persistent-homology encodings</h3>
-            <p>The Jacobian of an encoding induces a geometry on the data manifold. Measuring perturbations in this geometry shows which features a persistent-homology representation recognizes or ignores—without first training a downstream model.</p>
+            <p class="rule-label">Geometric data analysis · 2024</p><h3>Pull-back geometry of persistent-homology encodings</h3>
+            <p class="project-question">What does a topological representation actually see?</p>
+            <p>The Jacobian of an encoding induces a geometry on the data manifold. Measuring perturbations in this geometry reveals which features a persistent-homology representation recognizes or ignores—without first training a downstream model.</p>
+            <p class="project-collaborators">With Shuang Liang, Renata Turkeš, Nina Otter, and Guido Montúfar</p>
             <p class="project-meta"><a href="https://openreview.net/forum?id=7yswRA8zzw">Paper</a><a href="publications.html#peer-reviewed">Publication details</a></p>
           </article>
         </div>
@@ -63,13 +62,16 @@
         <div class="theme-sticky"><p class="theme-number">02</p><h2>Dynamics</h2><p>How does training move among qualitatively different solutions, and which local quantities reveal a change of learning regime?</p></div>
         <div class="project-stack">
           <article class="project-card">
-            <p class="rule-label">Singular learning theory</p><h3>A basin-selection perspective on grokking</h3>
+            <p class="rule-label">Singular learning theory · 2026</p><h3>Grokking as a phase transition between competing basins</h3>
+            <p class="project-question">Why can generalization arrive long after a network has fit its training data?</p>
             <p>We view grokking as a transition between competing near-zero-loss basins. The local learning coefficient ranks the basins by statistical preference, while optimization dynamics determine when training moves between them. In quadratic networks, this perspective yields closed-form results and an empirical probe of the path to generalization.</p>
+            <p class="project-collaborators">With Ben Cullen, Sergio Estan-Ruiz, and Riya Danait</p>
             <p class="project-meta"><a href="https://arxiv.org/abs/2603.01192">Paper</a><a href="publications.html#preprints">Publication details</a></p>
           </article>
           <article class="project-card">
-            <p class="rule-label">Current direction</p><h3>Local complexity along the optimization path</h3>
-            <p>I am interested in using singular invariants—not only endpoint loss—to describe how representations and effective model complexity evolve during training. The goal is to connect rigorous asymptotics with quantities that can be estimated in contemporary learning systems.</p>
+            <p class="rule-label">Current direction · Singular learning theory</p><h3>Tracking phase transitions during training</h3>
+            <p class="project-question">Can local singular complexity reveal a change of learning regime before aggregate loss does?</p>
+            <p>I am developing ways to use singular invariants—not only endpoint loss—to describe how representations and effective model complexity evolve during training. The goal is to connect rigorous asymptotics with quantities that can be estimated in contemporary learning systems and related to alignment-relevant changes in behavior.</p>
           </article>
         </div>
       </div>
@@ -77,15 +79,25 @@
 
     <section class="theme-section section-pad" id="guarantees">
       <div class="shell theme-layout">
-        <div class="theme-sticky"><p class="theme-number">03</p><h2>Guarantees</h2><p>Which conclusions about interpretability, generalization, and robustness are invariant—and therefore candidates for proof?</p></div>
+        <div class="theme-sticky"><p class="theme-number">03</p><h2>Guarantees</h2><p>Which properties of a learned system are invariant under reparameterization, and when can we prove that they are recoverable, robust, or meaningful?</p></div>
         <div class="project-stack">
           <article class="project-card">
-            <p class="rule-label">Reliable AI</p><h3>Identifiability before interpretation</h3>
-            <p>An explanation tied to a non-identifiable coordinate system can change while the learned function remains the same. My agenda treats symmetry, equivalence, and identifiability as prerequisites for claims about what a model has learned.</p>
+            <p class="rule-label">AI alignment · Current direction</p><h3>Identifiability before interpretation</h3>
+            <p class="project-question">When is an explanation a property of the learned function rather than an artifact of its coordinates?</p>
+            <p>An explanation tied to a non-identifiable parameterization can change while the learned function remains the same. My agenda treats symmetry, equivalence, and identifiability as prerequisites for rigorous claims about what a model has learned—and for deciding which internal features can support reliable oversight.</p>
           </article>
           <article class="project-card">
-            <p class="rule-label">Resilient systems</p><h3>Predicting vulnerability and recovering from damage</h3>
+            <p class="rule-label">Algebraic statistics · 2026</p><h3>Identifiability in graphical discrete Lyapunov models</h3>
+            <p class="project-question">When can a directed mechanism be recovered from steady-state observations?</p>
+            <p>Higher-order cumulants reveal parameters that covariance alone cannot. We establish generic and local identifiability results and connect them to the directed graph encoded by the system's parameter matrix.</p>
+            <p class="project-collaborators">With Cecilie Olesen Recke, Sarah Lumpp, Nataliia Kushnerchuk, Janike Oldekop, Jane Ivy Coons, and Elina Robeva</p>
+            <p class="project-meta"><a href="https://arxiv.org/abs/2601.21818">Paper</a><a href="publications.html#preprints">Publication details</a></p>
+          </article>
+          <article class="project-card">
+            <p class="rule-label">Resilient systems · 2020</p><h3>Predicting vulnerability and recovering from damage</h3>
+            <p class="project-question">Can geometry predict where a trained network will fail under damage?</p>
             <p>Differential geometry can locate vulnerable directions in a trained network and construct recovery paths after parameters are damaged. This early work motivates a broader question: how can geometric structure support guarantees for systems deployed under perturbation?</p>
+            <p class="project-collaborators">With Guruprasad Raghavan and Matt Thomson</p>
             <p class="project-meta"><a href="https://arxiv.org/abs/2005.11603">Paper</a><a href="publications.html#preprints">Publication details</a></p>
           </article>
         </div>
@@ -93,11 +105,11 @@
     </section>
 
     <section class="section-pad shell two-column">
-      <div><p class="eyebrow">The through line</p><h2 class="section-title">Structure → dynamics → guarantees</h2><p class="section-lede">These themes are not separate projects. The structure of a model shapes its loss landscape; that landscape shapes learning dynamics; and invariant structure determines which explanations and guarantees can be trusted.</p></div>
-      <aside class="aside-note"><h2>Working together</h2><p>I enjoy collaborations across algebraic geometry, statistics, learning theory, and scientific machine learning.</p><a href="mailto:jli@mpi-cbg.de">Start a conversation</a></aside>
+      <div><p class="eyebrow">The through line</p><h2 class="section-title">Structure → dynamics → guarantees</h2><p class="section-lede">These themes are not separate projects. A model's structure determines the solutions available to training; learning dynamics select among them; and invariant structure determines which explanations, interventions, and guarantees can be trusted.</p></div>
+      <aside class="aside-note"><h2>Working together</h2><p>I welcome collaborations across algebraic geometry, statistics, learning theory, interpretability, and AI alignment—especially projects that connect rigorous mathematics with empirically testable questions.</p><a href="mailto:jli@mpi-cbg.de">Start a conversation</a></aside>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="shell footer-grid"><div><p class="footer-name">Jiayi Li</p><p>Geometry, learning, and reliable AI.</p></div><div class="footer-links"><a href="mailto:jli@mpi-cbg.de">Email</a><a href="https://scholar.google.com/citations?user=ZD9YWtIAAAAJ">Scholar</a><a href="https://github.com/jl2ml">GitHub</a><a href="cv.pdf">CV</a></div><p class="footer-meta">Last updated August 2026</p></div></footer>
+  <footer class="site-footer"><div class="shell footer-grid"><div><p class="footer-name">Jiayi Li</p><p>Geometry, learning dynamics, and AI alignment.</p></div><div class="footer-links"><a href="mailto:jli@mpi-cbg.de">Email</a><a href="https://scholar.google.com/citations?user=ZD9YWtIAAAAJ">Scholar</a><a href="https://github.com/jl2ml">GitHub</a><a href="cv.pdf">CV</a></div><p class="footer-meta">Last updated August 2026</p></div></footer>
 </body>
 </html>
