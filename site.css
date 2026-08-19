@@ -403,7 +403,7 @@ a:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
 @media (max-width: 620px) {
   .shell { width: min(100% - 1.5rem, 1160px); }
   .hero h1 { font-size: clamp(2.65rem, 14vw, 4.2rem); }
-  .site-nav { gap: 1.1rem; font-size: 0.74rem; }
+  .site-nav { flex-wrap: wrap; gap: 0.9rem 1.1rem; overflow-x: visible; padding-bottom: 0.2rem; font-size: 0.74rem; }
   .hero-actions { flex-direction: column; }
   .button { width: 100%; }
   .news-item { grid-template-columns: 1fr; gap: 0.45rem; }

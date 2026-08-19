@@ -3,20 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jiayi Li — Geometry, Learning Dynamics, and AI Alignment</title>
+  <title>Jiayi Li | Geometry, Learning Dynamics, and AI Alignment</title>
   <meta name="description" content="Jiayi Li develops mathematical foundations for AI alignment using neuroalgebraic geometry, singular learning theory, identifiability, and statistics.">
   <link rel="canonical" href="https://jl2ml.github.io/">
   <meta name="theme-color" content="#f7f4ec">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Jiayi Li — Geometry, Learning Dynamics, and AI Alignment">
+  <meta property="og:title" content="Jiayi Li | Geometry, Learning Dynamics, and AI Alignment">
   <meta property="og:description" content="From the geometry of learning to the mathematics of AI alignment.">
   <meta property="og:url" content="https://jl2ml.github.io/">
   <meta property="og:image" content="https://jl2ml.github.io/images/jiayi-li-profile.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Jiayi Li — Geometry, Learning Dynamics, and AI Alignment">
+  <meta name="twitter:title" content="Jiayi Li | Geometry, Learning Dynamics, and AI Alignment">
   <meta name="twitter:description" content="From the geometry of learning to the mathematics of AI alignment.">
   <meta name="twitter:image" content="https://jl2ml.github.io/images/jiayi-li-profile.jpg">
-  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="site.css?v=20260819">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -145,7 +145,7 @@
             <p class="pillar-number">03</p>
             <h3>Guarantees</h3>
             <p class="pillar-kicker">Which claims survive?</p>
-            <p>Identifiability and invariant structure separate stable facts about a model from artifacts of parameterization—the basis for rigorous interpretability, reliability, and alignment.</p>
+            <p>Identifiability and invariant structure separate stable facts about a model from artifacts of parameterization. This distinction is the basis for rigorous interpretability, reliability, and alignment.</p>
             <a href="research.html#guarantees">Mathematical guarantees <span aria-hidden="true">→</span></a>
           </article>
         </div>
@@ -206,9 +206,9 @@
           <figure class="work-concept dynamics-concept">
             <svg viewBox="0 0 520 330" role="img" aria-labelledby="grokking-diagram-title grokking-diagram-desc">
               <title id="grokking-diagram-title">Training moves between competing solution basins</title>
-              <desc id="grokking-diagram-desc">Memorizing and generalizing basins both have near-zero training loss. A late optimization transition moves to the generalizing basin, whose lower local learning coefficient indicates greater statistical preference.</desc>
+              <desc id="grokking-diagram-desc">The memorizing and generalizing basins both have training loss close to zero. A late optimization transition moves to the generalizing basin, whose lower local learning coefficient indicates greater statistical preference.</desc>
               <defs><marker id="arrow-dynamics" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z"></path></marker></defs>
-              <text class="diagram-overline" x="260" y="29" text-anchor="middle">TWO NEAR-ZERO-LOSS SOLUTIONS</text>
+              <text class="diagram-overline" x="260" y="29" text-anchor="middle">TWO SOLUTIONS WITH LOSS NEAR ZERO</text>
               <path class="diagram-landscape" d="M35 75 C76 80 85 219 157 219 C220 219 216 107 275 107 C333 107 328 223 404 223 C460 223 477 83 505 78"></path>
               <circle class="diagram-basin warm-point" cx="157" cy="211" r="9"></circle><circle class="diagram-basin cool-point" cx="404" cy="215" r="9"></circle>
               <path class="diagram-trajectory" d="M164 194 C221 128 322 131 396 197" marker-end="url(#arrow-dynamics)"></path>
@@ -227,7 +227,7 @@
             <p class="work-type">02 · Dynamics · Singular learning theory</p>
             <h3>A Basin-Selection Perspective on Grokking via Singular Learning Theory</h3>
             <p class="work-question">Why does a network generalize long after it has already fit the training data?</p>
-            <p>We interpret grokking as a transition between competing near-zero-loss basins. The local learning coefficient ranks their statistical preference; optimization dynamics determine when training moves between them.</p>
+            <p>We interpret grokking as a transition between competing basins whose losses are nearly zero. The local learning coefficient ranks their statistical preference; optimization dynamics determine when training moves between them.</p>
             <p class="work-authors">With Ben Cullen, Sergio Estan-Ruiz, and Riya Danait</p>
             <div class="work-links">
               <a href="https://arxiv.org/abs/2603.01192">Paper</a>
@@ -239,10 +239,10 @@
         <article class="work-card">
           <figure class="work-concept guarantees-concept">
             <svg viewBox="0 0 520 330" role="img" aria-labelledby="lyapunov-diagram-title lyapunov-diagram-desc">
-              <title id="lyapunov-diagram-title">Higher-order cumulants identify a directed dynamical system</title>
-              <desc id="lyapunov-diagram-desc">For a steady-state vector autoregressive model, non-Gaussian third- and fourth-order cumulants supplement covariance information and allow the directed parameter matrix to be recovered.</desc>
+              <title id="lyapunov-diagram-title">Third and fourth cumulants identify a directed dynamical system</title>
+              <desc id="lyapunov-diagram-desc">For a vector autoregressive model at steady state, third and fourth cumulants supplement covariance information and allow the directed parameter matrix to be recovered when the noise is not Gaussian.</desc>
               <defs><marker id="arrow-guarantees" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z"></path></marker></defs>
-              <text class="diagram-overline" x="260" y="25" text-anchor="middle">STEADY-STATE VECTOR AUTOREGRESSION</text>
+              <text class="diagram-overline" x="260" y="25" text-anchor="middle">VECTOR AUTOREGRESSION AT STEADY STATE</text>
               <text class="diagram-math" x="260" y="56" text-anchor="middle">x<tspan baseline-shift="sub" font-size="12">t+1</tspan> = A x<tspan baseline-shift="sub" font-size="12">t</tspan> + ε<tspan baseline-shift="sub" font-size="12">t</tspan></text>
               <g class="diagram-lines arrowed-lines">
                 <line x1="72" y1="134" x2="133" y2="107" marker-end="url(#arrow-guarantees)"></line>
@@ -271,8 +271,8 @@
           <div class="work-copy">
             <p class="work-type">03 · Guarantees · Identifiability</p>
             <h3>Identifiability in Graphical Discrete Lyapunov Models</h3>
-            <p class="work-question">When can a directed mechanism be recovered from steady-state observations?</p>
-            <p>Higher-order cumulants reveal parameters that covariance alone cannot. This establishes identifiability beyond the Gaussian setting and provides a foundation for structure learning in directed systems.</p>
+            <p class="work-question">When can a directed mechanism be recovered from observations at steady state?</p>
+            <p>Third and fourth cumulants reveal parameters that covariance alone cannot. This establishes identifiability beyond the Gaussian setting and provides a foundation for structure learning in directed systems.</p>
             <p class="work-authors">With Cecilie Olesen Recke, Sarah Lumpp, Nataliia Kushnerchuk, Janike Oldekop, Jane Ivy Coons, and Elina Robeva</p>
             <div class="work-links">
               <a href="https://arxiv.org/abs/2601.21818">Paper</a>
@@ -288,7 +288,7 @@
         <div class="section-heading news-intro">
           <p class="eyebrow">Now &amp; next</p>
           <h2>Research in motion</h2>
-          <p>Recent papers, talks, programs, and community-building around the mathematics of learning.</p>
+          <p>Recent papers, talks, programs, and community building around the mathematics of learning.</p>
         </div>
         <div class="news-list">
           <article class="news-item">
