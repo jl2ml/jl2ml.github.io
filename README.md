@@ -14,4 +14,4 @@ The site is intentionally dependency-free: each page is plain semantic HTML and 
 - `bio.html` — reusable short biography and portrait
 - `misc.html` — personal page
 
-Update dates appear in page footers. The CV is maintained separately as `cv.pdf`.
+Update dates appear in page footers. The public CV link uses `JiayiLi_CV.pdf`; keep `cv.pdf` as a duplicate for older submitted links, and refresh both files together through mid 2027.
