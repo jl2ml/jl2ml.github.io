@@ -111,15 +111,15 @@ a:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
 }
 .hero h1 { max-width: 760px; font-size: clamp(2.7rem, 4.9vw, 4.05rem); }
 .hero h1 em { color: var(--pine); font-style: normal; font-weight: 600; }
-.hero-lede {
+.hero-intro {
   max-width: 720px;
   margin: 1.6rem 0 0;
   color: var(--ink-soft);
   font-family: var(--serif);
-  font-size: clamp(1.08rem, 1.7vw, 1.22rem);
+  font-size: clamp(1.05rem, 1.5vw, 1.16rem);
   line-height: 1.62;
 }
-.hero-note { max-width: 720px; margin: 1rem 0 0; color: var(--ink-soft); font-size: 0.97rem; }
+.hero-intro + .hero-intro { margin-top: 1rem; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 1.65rem; }
 .button {
   display: inline-flex;
@@ -149,10 +149,10 @@ a:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
 .portrait-frame { aspect-ratio: 4 / 5; overflow: hidden; background: var(--paper-deep); border: 1px solid var(--line); }
 .portrait-frame img { width: 100%; height: 100%; object-fit: cover; object-position: center 24%; }
 .portrait-caption { padding: 0.8rem 0 0; }
-.portrait-caption p { margin: 0.15rem 0 0; color: var(--ink-soft); font-size: 0.88rem; }
+.portrait-caption p { margin: 0.15rem 0 0; color: var(--ink-soft); font-size: 0.84rem; }
 .portrait-caption .caption-name { color: var(--ink); font-family: var(--serif); font-size: 1.04rem; font-weight: 700; }
-.portrait-caption .caption-pronunciation { margin-top: 0.1rem; font-size: 0.76rem; font-style: italic; }
-.portrait-caption .portrait-note { margin-top: 0.65rem; font-family: var(--serif); font-size: 0.78rem; font-style: italic; line-height: 1.45; }
+.portrait-caption .caption-pronunciation { margin-top: 0.1rem; font-style: italic; }
+.portrait-caption .portrait-note { margin-top: 0.65rem; font-family: var(--serif); font-style: italic; line-height: 1.45; }
 .portrait-accent { display: none; }
 
 .research-agenda { background: var(--paper-deep); color: var(--ink); border-block: 1px solid var(--line); }
@@ -286,7 +286,6 @@ a:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
 .misc-hero h1 { max-width: none; font-size: clamp(1.7rem, 2.8vw, 2.3rem); letter-spacing: -0.01em; }
 .prose { max-width: 790px; }
 .prose > p { color: var(--ink-soft); font-family: var(--serif); font-size: 1.02rem; }
-.prose > p:first-child { color: var(--ink); font-size: 1.14rem; }
 .section-title { margin: 0; font-family: var(--serif); font-size: clamp(2rem, 3.7vw, 3.1rem); font-weight: 600; line-height: 1.16; letter-spacing: -0.015em; }
 .section-lede { max-width: 760px; color: var(--ink-soft); font-family: var(--serif); font-size: 1.02rem; }
 .rule-label { margin: 0 0 0.55rem; color: var(--pine); font-size: 0.86rem; font-weight: 600; letter-spacing: 0.02em; }
