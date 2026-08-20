@@ -7,7 +7,10 @@
   <meta name="description" content="Jiayi Li's research agenda connecting neuroalgebraic geometry, singular learning theory, identifiability, and the mathematical foundations of AI alignment.">
   <link rel="canonical" href="https://jl2ml.github.io/research.html">
   <meta name="theme-color" content="#fbfaf7">
-  <link rel="stylesheet" href="site.css?v=20260819b">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="site.css?v=20260819g">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -20,7 +23,7 @@
         <a href="publications.html">Publications</a>
         <a href="teaching.html">Teaching &amp; mentoring</a>
         <a href="service.html">Talks &amp; service</a>
-        <a href="cv.pdf">CV</a>
+        <a href="JiayiLi_CV.pdf">CV</a>
       </nav>
     </div>
   </header>
@@ -65,12 +68,32 @@
             <p class="rule-label">Singular learning theory · 2026</p><h3>A basin-selection perspective on grokking</h3>
             <p class="project-question">Why can generalization arrive long after a network has fit its training data?</p>
             <p>We view grokking as a transition between competing basins whose losses are nearly zero. The local learning coefficient ranks the basins by statistical preference, while optimization dynamics determine when training moves between them. In quadratic networks, this perspective yields explicit results and an empirical probe of the path to generalization.</p>
-            <p class="project-collaborators">With Ben Cullen, Sergio Estan-Ruiz, and Riya Danait</p>
+            <p class="project-collaborators">With Ben Cullen, Sergio Estan-Ruiz, and Riya Danait, from a project I mentored at LOGML 2025.</p>
             <p class="project-meta"><a href="https://arxiv.org/abs/2603.01192">Paper</a><a href="publications.html#preprints">Publication details</a></p>
           </article>
           <article class="project-card">
             <p class="rule-label">Current direction · Singular learning theory</p><h3>Tracking phase transitions during training</h3>
-            <p class="project-question">Can local singular complexity reveal a change of learning regime before aggregate loss does?</p>
+            <p class="project-question">Can local singular complexity reveal changes of learning regime that are not visible in aggregate loss?</p>
+            <figure class="project-diagram">
+              <svg class="phase-diagram" viewBox="0 0 640 250" role="img" aria-labelledby="phase-diagram-title phase-diagram-desc">
+                <title id="phase-diagram-title">Comparing loss and estimated local complexity during training</title>
+                <desc id="phase-diagram-desc">A schematic research hypothesis. The loss changes gradually while an estimated local learning coefficient changes near a candidate transition. The diagram poses a comparison rather than reporting an empirical result.</desc>
+                <text class="diagram-overline" x="32" y="25">SCHEMATIC RESEARCH QUESTION</text>
+                <line class="diagram-axis" x1="72" y1="46" x2="72" y2="205"></line>
+                <line class="diagram-axis" x1="72" y1="205" x2="608" y2="205"></line>
+                <text class="diagram-note" x="26" y="80">loss</text>
+                <text class="diagram-note" x="18" y="165">local</text>
+                <text class="diagram-note" x="8" y="180">complexity</text>
+                <text class="diagram-note" x="596" y="230" text-anchor="end">training step</text>
+                <path class="signal-loss" d="M82 66 C180 70 274 78 365 86 C455 94 530 98 596 100"></path>
+                <path class="signal-complexity" d="M82 142 H210 C250 142 280 145 316 148 H352 V177 H596"></path>
+                <line class="diagram-transition" x1="352" y1="44" x2="352" y2="205"></line>
+                <text class="diagram-key" x="368" y="142">candidate regime change</text>
+                <text class="diagram-note" x="410" y="82">loss changes gradually</text>
+                <text class="diagram-note" x="405" y="195">estimated LLC</text>
+              </svg>
+              <figcaption>Compare local complexity with loss around a candidate transition.</figcaption>
+            </figure>
             <p>I am developing ways to use singular invariants alongside endpoint loss to describe how representations and effective model complexity evolve during training. The goal is to connect rigorous asymptotics with quantities that can be estimated in contemporary learning systems and related to changes in behavior that matter for alignment.</p>
           </article>
         </div>
@@ -82,9 +105,36 @@
         <div class="theme-sticky"><p class="theme-number">03</p><h2>Guarantees</h2><p>Which properties of a learned system are invariant under reparameterization, and when can we prove that they are recoverable, robust, or meaningful?</p></div>
         <div class="project-stack">
           <article class="project-card">
-            <p class="rule-label">AI alignment · Current direction</p><h3>Identifiability before interpretation</h3>
-            <p class="project-question">When is an explanation a property of the learned function rather than an artifact of its coordinates?</p>
-            <p>An explanation tied to a parameterization that is not identifiable can change while the learned function remains the same. My agenda treats symmetry, equivalence, and identifiability as prerequisites for rigorous claims about what a model has learned. These conditions also help determine which internal features can support reliable oversight.</p>
+            <p class="rule-label">AI alignment · ILIAD Fellowship</p><h3>Identifiability before interpretation</h3>
+            <p class="project-question">Which features of a learned model remain meaningful across equivalent parameterizations?</p>
+            <figure class="project-diagram">
+              <svg class="invariance-diagram" viewBox="0 0 640 250" role="img" aria-labelledby="invariant-diagram-title invariant-diagram-desc">
+                <title id="invariant-diagram-title">Equivalent parameters require invariant interpretability claims</title>
+                <desc id="invariant-diagram-desc">Two different parameter points map to the same learned function. A claim tied only to one parameter point is marked as fragile, while a claim that agrees across equivalent descriptions is marked as invariant.</desc>
+                <defs><marker id="arrow-identifiability" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z"></path></marker></defs>
+                <text class="diagram-overline" x="32" y="25">EQUIVALENT DESCRIPTIONS</text>
+                <circle class="diagram-parameter" cx="104" cy="86" r="28"></circle>
+                <circle class="diagram-parameter" cx="104" cy="174" r="28"></circle>
+                <text class="diagram-math" x="104" y="93" text-anchor="middle">θ₁</text>
+                <text class="diagram-math" x="104" y="181" text-anchor="middle">θ₂</text>
+                <path class="diagram-arrow" d="M134 86 C220 86 236 118 300 126" marker-end="url(#arrow-identifiability)"></path>
+                <path class="diagram-arrow" d="M134 174 C220 174 236 142 300 134" marker-end="url(#arrow-identifiability)"></path>
+                <circle class="diagram-function" cx="342" cy="130" r="47"></circle>
+                <text class="diagram-math" x="342" y="125" text-anchor="middle">f</text>
+                <text class="diagram-note" x="342" y="147" text-anchor="middle">same function</text>
+                <rect class="claim-box fragile-claim" x="438" y="55" width="168" height="52" rx="5"></rect>
+                <text class="diagram-note" x="522" y="77" text-anchor="middle">parameter specific claim</text>
+                <text class="claim-mark fragile-mark" x="587" y="100">×</text>
+                <rect class="claim-box invariant-claim" x="438" y="145" width="168" height="52" rx="5"></rect>
+                <text class="diagram-note" x="522" y="167" text-anchor="middle">invariant claim</text>
+                <text class="claim-mark invariant-mark" x="582" y="191">✓</text>
+                <path class="diagram-guide" d="M132 69 C250 32 365 39 438 72"></path>
+                <path class="diagram-guide" d="M389 151 C414 159 418 168 438 171"></path>
+              </svg>
+              <figcaption>Interpretation should agree across equivalent parameterizations.</figcaption>
+            </figure>
+            <p>Through my ILIAD Fellowship, I am studying conditions under which a feature, mechanism, or explanation is identifiable from the learned function and data distribution, rather than from a particular choice of parameters. Parameter symmetries and singularities can produce different internal descriptions of the same learned function; quotient and invariant structure offer a way to characterize what can be compared across equivalent descriptions. The goal is a mathematical test for when an interpretability claim can support reliable oversight.</p>
+            <p class="project-meta"><a href="https://www.iliad.ac/fellowship">ILIAD Fellowship</a></p>
           </article>
           <article class="project-card">
             <p class="rule-label">Algebraic statistics · 2026</p><h3>Identifiability in graphical discrete Lyapunov models</h3>
@@ -93,23 +143,16 @@
             <p class="project-collaborators">With Cecilie Olesen Recke, Sarah Lumpp, Nataliia Kushnerchuk, Janike Oldekop, Jane Ivy Coons, and Elina Robeva</p>
             <p class="project-meta"><a href="https://arxiv.org/abs/2601.21818">Paper</a><a href="publications.html#preprints">Publication details</a></p>
           </article>
-          <article class="project-card">
-            <p class="rule-label">Resilient systems · 2020</p><h3>Predicting vulnerability and recovering from damage</h3>
-            <p class="project-question">Can geometry predict where a trained network will fail under damage?</p>
-            <p>Differential geometry can locate vulnerable directions in a trained network and construct recovery paths after parameters are damaged. This early work motivates a broader question: how can geometric structure support guarantees for systems deployed under perturbation?</p>
-            <p class="project-collaborators">With Guruprasad Raghavan and Matt Thomson</p>
-            <p class="project-meta"><a href="https://arxiv.org/abs/2005.11603">Paper</a><a href="publications.html#earlier-research">Publication details</a></p>
-          </article>
         </div>
       </div>
     </section>
 
     <section class="section-pad shell two-column">
       <div><p class="eyebrow">The through line</p><h2 class="section-title">Structure → dynamics → guarantees</h2><p class="section-lede">These themes are not separate projects. A model's structure determines the solutions available to training; learning dynamics select among them; and invariant structure determines which explanations, interventions, and guarantees can be trusted.</p></div>
-      <aside class="aside-note"><h2>Working together</h2><p>I welcome collaborations across algebraic geometry, statistics, learning theory, interpretability, and AI alignment. I especially value projects that connect rigorous mathematics with empirically testable questions.</p><a href="mailto:jli@mpi-cbg.de">Start a conversation</a></aside>
+      <aside class="aside-note"><h2>Working together</h2><p>I welcome collaborations across algebraic geometry, statistics, learning theory, interpretability, and AI alignment. I especially value projects that connect rigorous mathematics with empirically testable questions.</p><a href="mailto:jiayi.li.math@gmail.com">Start a conversation</a></aside>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="shell footer-grid"><div><p class="footer-name">Jiayi Li</p><p>Geometry, learning dynamics, and AI alignment.</p></div><div class="footer-links"><a href="mailto:jli@mpi-cbg.de">Email</a><a href="https://scholar.google.com/citations?user=ZD9YWtIAAAAJ">Scholar</a><a href="https://github.com/jl2ml">GitHub</a><a href="cv.pdf">CV</a></div><p class="footer-meta">Last updated August 2026</p></div></footer>
+  <footer class="site-footer"><div class="shell footer-grid"><div><p class="footer-name">Jiayi Li</p><p>Geometry, learning dynamics, and AI alignment.</p></div><div class="footer-links"><a href="mailto:jiayi.li.math@gmail.com">Email</a><a href="https://scholar.google.com/citations?user=ZD9YWtIAAAAJ">Scholar</a><a href="https://github.com/jl2ml">GitHub</a><a href="JiayiLi_CV.pdf">CV</a><a href="https://orcid.org/0000-0001-5132-7896">ORCID</a></div><p class="footer-meta">Last updated August 2026</p></div></footer>
 </body>
 </html>
