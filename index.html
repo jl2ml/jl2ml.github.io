@@ -19,7 +19,7 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon.png" type="image/png" sizes="64x64">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="site.css?v=20260819g">
+  <link rel="stylesheet" href="site.css?v=20260820">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -191,22 +191,21 @@
         <article class="work-card">
           <figure class="work-concept dynamics-concept">
             <svg viewBox="0 0 520 330" role="img" aria-labelledby="grokking-diagram-title grokking-diagram-desc">
-              <title id="grokking-diagram-title">Training moves between competing solution basins</title>
-              <desc id="grokking-diagram-desc">The memorizing and generalizing basins both have training loss close to zero. A late optimization transition moves to the generalizing basin, whose lower local learning coefficient indicates greater statistical preference.</desc>
+              <title id="grokking-diagram-title">Training moves toward a solution with more degenerate local geometry</title>
+              <desc id="grokking-diagram-desc">A schematic projection of local loss geometry. The memorizing solution is drawn with a quadratic curve as a visual proxy, without implying that it is regular or nondegenerate. The lower LLC generalizing solution is drawn with a more pronounced degenerate parameter direction, representing greater near minimal parameter volume rather than ordinary curvature alone.</desc>
               <defs><marker id="arrow-dynamics" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z"></path></marker></defs>
-              <text class="diagram-overline" x="260" y="29" text-anchor="middle">TWO SOLUTIONS WITH LOSS NEAR ZERO</text>
-              <path class="diagram-landscape" d="M35 75 C76 80 85 219 157 219 C220 219 216 107 275 107 C333 107 328 223 404 223 C460 223 477 83 505 78"></path>
-              <circle class="diagram-basin warm-point" cx="157" cy="211" r="9"></circle><circle class="diagram-basin cool-point" cx="404" cy="215" r="9"></circle>
-              <path class="diagram-trajectory" d="M164 194 C221 128 322 131 396 197" marker-end="url(#arrow-dynamics)"></path>
-              <text class="diagram-note trajectory-label" x="280" y="137" text-anchor="middle">late optimization transition</text>
-              <g class="diagram-small-tag"><rect x="107" y="172" width="100" height="25" rx="12.5"></rect><text x="157" y="189">train loss ≈ 0</text></g>
-              <g class="diagram-small-tag cool-tag"><rect x="354" y="176" width="100" height="25" rx="12.5"></rect><text x="404" y="193">train loss ≈ 0</text></g>
+              <text class="diagram-overline" x="260" y="29" text-anchor="middle">SCHEMATIC PROJECTION OF LOCAL GEOMETRY</text>
+              <path class="diagram-landscape" d="M35 68 Q92 218 157 218 Q218 218 275 76 C327 104 344 190 374 218 L438 218 C463 197 478 105 505 70"></path>
+              <path class="diagram-degenerate-direction" d="M374 218 L438 218"></path>
+              <circle class="diagram-basin warm-point" cx="157" cy="218" r="9"></circle><circle class="diagram-basin cool-point" cx="406" cy="218" r="9"></circle>
+              <path class="diagram-trajectory" d="M186 173 C237 79 336 78 394 190" marker-end="url(#arrow-dynamics)"></path>
+              <text class="diagram-note trajectory-label" x="290" y="76" text-anchor="middle">late transition · training loss ≈ 0</text>
               <text class="diagram-label" x="157" y="254" text-anchor="middle">MEMORIZATION</text>
               <text class="diagram-key" x="157" y="280" text-anchor="middle">λ<tspan baseline-shift="sub" font-size="12">mem</tspan></text>
-              <text class="diagram-label" x="404" y="254" text-anchor="middle">GENERALIZATION</text>
-              <text class="diagram-key diagram-accent" x="404" y="280" text-anchor="middle">λ<tspan baseline-shift="sub" font-size="12">gen</tspan> &lt; λ<tspan baseline-shift="sub" font-size="12">mem</tspan></text>
+              <text class="diagram-label" x="406" y="254" text-anchor="middle">GENERALIZATION</text>
+              <text class="diagram-key diagram-accent" x="406" y="280" text-anchor="middle">more degenerate · λ<tspan baseline-shift="sub" font-size="12">gen</tspan> &lt; λ<tspan baseline-shift="sub" font-size="12">mem</tspan></text>
               <line class="diagram-divider" x1="30" y1="295" x2="490" y2="295"></line>
-              <text class="diagram-note" x="260" y="319" text-anchor="middle">lower LLC  →  more posterior mass  →  lower expected test error</text>
+              <text class="diagram-note" x="260" y="319" text-anchor="middle">lower LLC  →  greater near minimal volume  →  more posterior mass</text>
             </svg>
           </figure>
           <div class="work-copy">
@@ -283,7 +282,7 @@
           </article>
           <article class="news-item">
             <time datetime="2026-09-07">Sep–Dec 2026</time>
-            <p>Through the <a href="https://www.iliad.ac/fellowship">ILIAD Fellowship</a> in applied mathematics for AI alignment, I am developing a project that connects learning geometry with reliable AI.</p>
+            <p>I am an <a href="https://www.iliad.ac/fellowship">ILIAD Fellow</a> in applied mathematics for AI alignment.</p>
           </article>
           <article class="news-item">
             <time datetime="2026-10-26">Oct 2026</time>

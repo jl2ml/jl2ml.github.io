@@ -214,6 +214,9 @@ a:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
 .diagram-chip.featured-chip rect { fill: var(--pine); stroke: var(--pine); }
 .diagram-chip.featured-chip text { fill: white; }
 .diagram-landscape { fill: none; stroke: var(--ink); stroke-width: 3; }
+.diagram-degenerate-direction { fill: none; stroke: var(--pine); stroke-width: 4; stroke-linecap: round; }
+.dynamics-concept .diagram-overline { font-size: 13px; }
+.dynamics-concept .diagram-note { font-size: 13px; }
 .diagram-basin { stroke: var(--surface); stroke-width: 3; }
 .warm-point { fill: var(--rust); }
 .cool-point { fill: var(--pine); }
