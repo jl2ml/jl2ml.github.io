@@ -19,7 +19,7 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon.png" type="image/png" sizes="64x64">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="site.css?v=20260920-home-balanced">
+  <link rel="stylesheet" href="site.css?v=20260920-home-name">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -63,12 +63,8 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
+  <header class="site-header home-header">
     <div class="shell nav-shell">
-      <a class="wordmark" href="index.html" aria-label="Jiayi Li, home">
-        <span class="wordmark-name">Jiayi Li</span>
-        <span class="wordmark-mark" aria-hidden="true">∿</span>
-      </a>
       <nav class="site-nav" aria-label="Primary navigation">
         <a class="active" href="index.html" aria-current="page">Home</a>
         <a href="research.html">Research</a>
@@ -82,9 +78,12 @@
   <main id="main" class="faculty-home">
     <section class="profile-hero shell" aria-labelledby="profile-title">
       <div class="profile-copy">
-        <h1 id="profile-title">Jiayi Li</h1>
-        <p class="profile-research">I study the geometry and statistics of machine learning, with a particular focus on singular learning theory.</p>
+        <div class="profile-heading">
+          <h1 id="profile-title">Jiayi Li</h1>
+          <p class="profile-pronunciation">Pronounced roughly “jyah-yee lee”</p>
+        </div>
         <p class="profile-role">I am a postdoctoral researcher in the <a href="https://www.mpi-cbg.de/research/our-research/research-areas/mathematics-and-artificial-intelligence">Section of Mathematics and Artificial Intelligence</a> at MPI-CBG in Dresden. I received my PhD in Statistics from UCLA, where I was a member of the Mathematical Machine Learning Group.</p>
+        <p class="profile-research">I study the geometry and statistics of machine learning: what models can represent, how they learn and generalize, and what can be inferred from data. Using algebraic geometry and singular learning theory, I connect model structure with statistical complexity and identifiability. These questions also guide my current work on interpretability and AI alignment.</p>
         <nav class="quick-links" aria-label="Contact and profile links">
           <a href="mailto:jiayi.li.math@gmail.com">Email</a>
           <a href="https://scholar.google.com/citations?user=ZD9YWtIAAAAJ">Google Scholar</a>
@@ -92,9 +91,8 @@
           <a href="bio.html">Short bio</a>
         </nav>
       </div>
-      <aside class="profile-aside" aria-label="Portrait and pronunciation">
+      <aside class="profile-aside" aria-label="Portrait">
         <img src="images/jiayi-li-profile.jpg" alt="Portrait of Jiayi Li" width="787" height="986" fetchpriority="high">
-        <p class="profile-pronunciation">Pronounced roughly “jyah-yee lee”</p>
       </aside>
     </section>
 
@@ -127,7 +125,6 @@
           </section>
         </div>
         <div class="research-footer">
-          <p class="research-outlook">I am also exploring how identifiability and model symmetries inform interpretability and AI alignment.</p>
           <a href="research.html" id="papers">Research <span aria-hidden="true">→</span></a>
         </div>
       </div>
