@@ -284,8 +284,8 @@ a:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
 .home-research { padding-block: 2.5rem; background: var(--paper-deep); border-block: 1px solid var(--line); }
 .home-research .home-section-heading { margin-bottom: 0.8rem; }
 .home-research .home-section-heading h2 { font-size: 1.2rem; font-weight: 400; letter-spacing: 0; }
-.research-footer { display: flex; align-items: baseline; flex-wrap: wrap; gap: 0.65rem 2rem; margin: 1.5rem 0 0 210px; }
-.research-footer > a { display: inline-flex; align-items: center; gap: 0.35rem; min-height: 36px; margin-left: auto; font-size: 0.9rem; }
+.research-footer { display: flex; align-items: baseline; justify-content: flex-end; flex-wrap: wrap; gap: 0.65rem 2rem; margin: 1.5rem 0 0 210px; }
+.research-footer > a { display: inline-flex; align-items: center; gap: 0.35rem; min-height: 36px; font-size: 0.9rem; }
 .research-topic { position: relative; display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 2.5rem; padding-bottom: 1.8rem; }
 .research-topic:last-child { padding-bottom: 0; }
 .research-topic:not(:last-child)::before { content: ""; position: absolute; left: 3px; top: 0.65rem; bottom: -0.65rem; border-left: 1px solid rgba(44, 87, 78, 0.3); }
