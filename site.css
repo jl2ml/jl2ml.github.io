@@ -500,6 +500,15 @@ a:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
 .research-topic-label p { margin: 0; color: var(--pine); font-size: 1.08rem; line-height: 1.4; font-weight: 600; }
 .research-topic-content h3 { margin: 0; font-size: clamp(1.2rem, 2vw, 1.4rem); font-weight: 600; line-height: 1.35; }
 .research-contribution { margin: 0.5rem 0 0; color: var(--ink-soft); font-size: 1rem; line-height: 1.6; }
+.research-lead { margin: 0.45rem 0 0; color: var(--ink-soft); font-size: 0.97rem; line-height: 1.6; }
+.home-paper { display: grid; grid-template-columns: minmax(230px, 0.44fr) minmax(0, 0.56fr); gap: 1.25rem 2rem; align-items: center; margin-top: 1rem; }
+.home-paper .work-concept { min-height: 0; padding: 0.75rem; background: var(--surface); }
+.home-paper-copy .rule-label { margin-bottom: 0.35rem; }
+.home-paper-copy h4 { margin: 0 0 0.5rem; font-size: 1.12rem; font-weight: 600; line-height: 1.35; }
+.home-paper-copy h4 a { text-decoration-thickness: 1px; text-decoration-color: transparent; }
+.home-paper-copy h4 a:hover, .home-paper-copy h4 a:focus-visible { text-decoration-color: currentColor; }
+.home-paper-copy p:not(.rule-label) { margin: 0; color: var(--ink-soft); font-size: 0.97rem; line-height: 1.6; }
+.home-paper-copy .home-paper-collaborators { margin-top: 0.6rem; font-size: 0.86rem; }
 .page-title-row { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 1rem 2rem; }
 .research-record-links { display: flex; flex-wrap: wrap; gap: 0.7rem 1.2rem; font-size: 0.9rem; }
 .research-record-links a { display: inline-flex; align-items: center; min-height: 36px; }
@@ -524,6 +533,10 @@ a:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
   .research-footer { margin-left: 164px; }
   .evidence-grid article:first-child { padding-right: 2rem; }
   .evidence-grid article + article { padding-left: 2rem; }
+}
+@media (max-width: 760px) {
+  .home-paper { grid-template-columns: minmax(0, 1fr); gap: 0.9rem; }
+  .home-paper .work-concept { max-width: 420px; }
 }
 @media (max-width: 620px) {
   .shell { width: calc(100% - 2.5rem); }

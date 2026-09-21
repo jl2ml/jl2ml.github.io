@@ -106,21 +106,119 @@
             <div class="research-topic-label"><p>Geometry &amp; statistics</p></div>
             <div class="research-topic-content">
               <h3 id="selected-structure">What does a model’s structure make possible?</h3>
-              <p class="research-contribution">I study how architecture shapes the geometry of functions represented by <a href="https://arxiv.org/abs/2402.00949">polynomial neural networks</a>, and which changes in the data <a href="https://openreview.net/forum?id=7yswRA8zzw">topological representations</a> detect.</p>
+              <article class="home-paper">
+                <figure class="work-concept structure-concept">
+                <svg viewBox="0 0 520 330" role="img" aria-labelledby="pnn-diagram-title pnn-diagram-desc">
+                <title id="pnn-diagram-title">Parameters map to a neuromanifold in function space</title>
+                <desc id="pnn-diagram-desc">Network parameters map to the neuromanifold of representable functions. Its dimension measures expressivity, while its learning degree measures algebraic training complexity.</desc>
+                <defs><marker id="arrow-structure" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z"></path></marker></defs>
+                <text class="diagram-overline" x="38" y="29">PARAMETER SPACE</text>
+                <text class="diagram-overline" x="344" y="29">FUNCTION SPACE</text>
+                <g class="diagram-lines">
+                <line x1="58" y1="83" x2="121" y2="65"></line><line x1="58" y1="83" x2="121" y2="117"></line>
+                <line x1="58" y1="171" x2="121" y2="117"></line><line x1="58" y1="171" x2="121" y2="187"></line>
+                <line x1="121" y1="65" x2="183" y2="127"></line><line x1="121" y1="117" x2="183" y2="127"></line><line x1="121" y1="187" x2="183" y2="127"></line>
+                </g>
+                <g class="diagram-nodes"><circle cx="58" cy="83" r="9"></circle><circle cx="58" cy="171" r="9"></circle><circle cx="121" cy="65" r="9"></circle><circle cx="121" cy="117" r="9"></circle><circle cx="121" cy="187" r="9"></circle><circle cx="183" cy="127" r="10"></circle></g>
+                <text class="diagram-math" x="112" y="226" text-anchor="middle">θ ∈ Θ</text>
+                <path class="diagram-arrow" d="M216 127 H290" marker-end="url(#arrow-structure)"></path>
+                <text class="diagram-map-label" x="253" y="111" text-anchor="middle">φ</text>
+                <path class="diagram-surface" d="M337 66 C386 42 474 65 475 124 C476 183 428 224 362 205 C308 189 299 94 337 66 Z"></path>
+                <circle class="diagram-point" cx="350" cy="102" r="5"></circle><circle class="diagram-point" cx="410" cy="76" r="5"></circle><circle class="diagram-point" cx="444" cy="153" r="5"></circle>
+                <text class="diagram-math diagram-accent" x="400" y="134" text-anchor="middle">𝓜 = im(φ)</text>
+                <line class="diagram-divider" x1="30" y1="258" x2="490" y2="258"></line>
+                <text class="diagram-key" x="138" y="289" text-anchor="middle">dim 𝓜</text>
+                <text class="diagram-note" x="138" y="311" text-anchor="middle">measures expressivity</text>
+                <text class="diagram-key" x="382" y="289" text-anchor="middle">learning degree</text>
+                <text class="diagram-note" x="382" y="311" text-anchor="middle">measures training complexity</text>
+                </svg>
+                </figure>
+                <div class="home-paper-copy">
+                  <p class="rule-label">Algebraic Statistics · 2024</p>
+                  <h4><a href="https://arxiv.org/abs/2402.00949">Geometry of Polynomial Neural Networks</a></h4>
+                  <p>For polynomial networks with monomial activations, we describe the geometry of the functions they can represent. The dimension of this function space measures expressivity, and its learning degree gives an algebraic measure of training complexity.</p>
+                  <p class="home-paper-collaborators">With Kaie Kubjas and Maximilian Wiesmann</p>
+                </div>
+              </article>
             </div>
           </section>
           <section class="research-topic" aria-labelledby="selected-dynamics">
             <div class="research-topic-label"><p>Learning</p></div>
             <div class="research-topic-content">
               <h3 id="selected-dynamics">How does this structure influence what is learned?</h3>
-              <p class="research-contribution">Solutions that fit the same data can have different local complexity. I use singular learning theory to connect this geometry to generalization, including <a href="https://arxiv.org/abs/2603.01192">grokking in shallow quadratic networks</a>.</p>
+              <article class="home-paper">
+                <figure class="work-concept dynamics-concept">
+                <svg viewBox="0 0 520 330" role="img" aria-labelledby="grokking-diagram-title grokking-diagram-desc">
+                <title id="grokking-diagram-title">Training moves toward a solution with more degenerate local geometry</title>
+                <desc id="grokking-diagram-desc">A schematic projection of local loss geometry. The memorizing solution is drawn with a quadratic curve as a visual proxy, without implying that it is regular or nondegenerate. The lower LLC generalizing solution is drawn with a more pronounced degenerate parameter direction, representing greater near minimal parameter volume rather than ordinary curvature alone.</desc>
+                <defs><marker id="arrow-dynamics" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z"></path></marker></defs>
+                <text class="diagram-overline" x="260" y="29" text-anchor="middle">SCHEMATIC PROJECTION OF LOCAL GEOMETRY</text>
+                <path class="diagram-landscape" d="M35 68 Q92 218 157 218 Q218 218 275 76 C327 104 344 190 374 218 L438 218 C463 197 478 105 505 70"></path>
+                <path class="diagram-degenerate-direction" d="M374 218 L438 218"></path>
+                <circle class="diagram-basin warm-point" cx="157" cy="218" r="9"></circle><circle class="diagram-basin cool-point" cx="406" cy="218" r="9"></circle>
+                <path class="diagram-trajectory" d="M186 173 C237 79 336 78 394 190" marker-end="url(#arrow-dynamics)"></path>
+                <text class="diagram-note trajectory-label" x="290" y="76" text-anchor="middle">late transition · training loss ≈ 0</text>
+                <text class="diagram-label" x="157" y="254" text-anchor="middle">MEMORIZATION</text>
+                <text class="diagram-key" x="157" y="280" text-anchor="middle">λ<tspan baseline-shift="sub" font-size="12">mem</tspan></text>
+                <text class="diagram-label" x="406" y="254" text-anchor="middle">GENERALIZATION</text>
+                <text class="diagram-key diagram-accent" x="406" y="280" text-anchor="middle">more degenerate · λ<tspan baseline-shift="sub" font-size="12">gen</tspan> &lt; λ<tspan baseline-shift="sub" font-size="12">mem</tspan></text>
+                <line class="diagram-divider" x1="30" y1="295" x2="490" y2="295"></line>
+                <text class="diagram-note" x="260" y="319" text-anchor="middle">lower LLC  →  greater near minimal volume  →  more posterior mass</text>
+                </svg>
+                </figure>
+                <div class="home-paper-copy">
+                  <p class="rule-label">Preprint · 2026</p>
+                  <h4><a href="https://arxiv.org/abs/2603.01192">A Basin-Selection Perspective on Grokking via Singular Learning Theory</a></h4>
+                  <p>We interpret grokking as a transition between competing basins whose losses are nearly zero. The local learning coefficient ranks their statistical preference; optimization dynamics determine when training moves between them.</p>
+                  <p class="home-paper-collaborators">With Ben Cullen, Sergio Estan-Ruiz, and Riya Danait, from a project I mentored at LOGML 2025</p>
+                </div>
+              </article>
             </div>
           </section>
           <section class="research-topic" aria-labelledby="selected-guarantees">
             <div class="research-topic-label"><p>Guarantees</p></div>
             <div class="research-topic-content">
               <h3 id="selected-guarantees">What can the data identify?</h3>
-              <p class="research-contribution">A good fit alone does not ensure that model parameters can be recovered. My work establishes <a href="https://arxiv.org/abs/2601.21818">identifiability conditions for graphical dynamical models</a> using information beyond covariance.</p>
+              <p class="research-lead">The same question shapes my current work on AI alignment: an interpretability claim about a trained network should remain valid across all parameters that compute the same function.</p>
+              <article class="home-paper">
+                <figure class="work-concept guarantees-concept">
+                <svg viewBox="0 0 520 330" role="img" aria-labelledby="lyapunov-diagram-title lyapunov-diagram-desc">
+                <title id="lyapunov-diagram-title">Third and fourth cumulants identify a directed dynamical system</title>
+                <desc id="lyapunov-diagram-desc">For a vector autoregressive model at steady state, third and fourth cumulants supplement covariance information and allow the directed parameter matrix to be recovered when the noise is not Gaussian.</desc>
+                <defs><marker id="arrow-guarantees" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z"></path></marker></defs>
+                <text class="diagram-overline" x="260" y="25" text-anchor="middle">VECTOR AUTOREGRESSION AT STEADY STATE</text>
+                <text class="diagram-math" x="260" y="56" text-anchor="middle">x<tspan baseline-shift="sub" font-size="12">t+1</tspan> = A x<tspan baseline-shift="sub" font-size="12">t</tspan> + ε<tspan baseline-shift="sub" font-size="12">t</tspan></text>
+                <g class="diagram-lines arrowed-lines">
+                <line x1="72" y1="134" x2="133" y2="107" marker-end="url(#arrow-guarantees)"></line>
+                <line x1="71" y1="151" x2="134" y2="188" marker-end="url(#arrow-guarantees)"></line>
+                <line x1="157" y1="125" x2="157" y2="171" marker-end="url(#arrow-guarantees)"></line>
+                <path d="M49 125 C24 90 99 83 78 124" marker-end="url(#arrow-guarantees)"></path>
+                <path d="M139 91 C125 60 189 60 174 92" marker-end="url(#arrow-guarantees)"></path>
+                <path d="M139 190 C120 227 190 230 174 193" marker-end="url(#arrow-guarantees)"></path>
+                </g>
+                <g class="diagram-nodes large-nodes"><circle cx="58" cy="143" r="18"></circle><circle cx="157" cy="105" r="18"></circle><circle cx="157" cy="190" r="18"></circle></g>
+                <text class="diagram-node-label" x="58" y="149" text-anchor="middle">x₁</text><text class="diagram-node-label" x="157" y="111" text-anchor="middle">x₂</text><text class="diagram-node-label" x="157" y="196" text-anchor="middle">x₃</text>
+                <text class="diagram-label" x="111" y="248" text-anchor="middle">A ENCODES THE GRAPH</text>
+                <path class="diagram-arrow" d="M198 153 H250" marker-end="url(#arrow-guarantees)"></path>
+                <g class="diagram-cumulant-stack">
+                <text class="diagram-cumulants muted-cumulant" x="270" y="111">κ₂</text><text class="diagram-note" x="313" y="108">covariance</text>
+                <text class="diagram-cumulants" x="270" y="158">κ₃</text><text class="diagram-note" x="313" y="155">non-Gaussian</text>
+                <text class="diagram-cumulants" x="270" y="205">κ₄</text><text class="diagram-note" x="313" y="202">information</text>
+                </g>
+                <path class="diagram-arrow" d="M371 153 H416" marker-end="url(#arrow-guarantees)"></path>
+                <g class="diagram-result"><rect x="426" y="105" width="68" height="96" rx="8"></rect><text x="460" y="144">A</text><text x="460" y="174">recovered</text></g>
+                <line class="diagram-divider" x1="30" y1="274" x2="490" y2="274"></line>
+                <text class="diagram-key" x="260" y="302" text-anchor="middle">DAG + self-loops  →  generic identifiability</text>
+                <text class="diagram-note" x="260" y="322" text-anchor="middle">parameters are rational functions of the cumulants</text>
+                </svg>
+                </figure>
+                <div class="home-paper-copy">
+                  <p class="rule-label">Preprint · 2026</p>
+                  <h4><a href="https://arxiv.org/abs/2601.21818">Identifiability in Graphical Discrete Lyapunov Models</a></h4>
+                  <p>We ask when the parameters of a graphical dynamical model can be recovered from its steady-state distribution. With non-Gaussian noise, higher-order cumulants provide information beyond covariance and yield generic identifiability for directed acyclic graphs with a self-loop at every vertex.</p>
+                  <p class="home-paper-collaborators">With Cecilie Olesen Recke, Sarah Lumpp, Nataliia Kushnerchuk, Janike Oldekop, Jane Ivy Coons, and Elina Robeva</p>
+                </div>
+              </article>
             </div>
           </section>
         </div>
